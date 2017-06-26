@@ -1,0 +1,186 @@
+{
+    "editorData": [{
+        "name": "怪物",
+        "type": 3,
+        "icon": "DesignRes/01Monster",
+        "children": [
+            {
+                "scale": 9,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/shangzeilouluo/shangzeilouluo",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "巡山喽啰",
+                "ID": 30003
+            },
+			{
+                "scale": 9,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/mengmianren/mengmianren",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "蒙面人",
+                "ID": 30007
+            },
+            {
+                "scale": 6,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/jianghudaoshi/jianghudaoshi",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "江湖道士",
+                "ID": 30004
+            }
+			,
+            {
+                "scale": 6,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/xianjieshinv/xianjieshinv",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "仙界侍女",
+                "ID": 30005
+            }
+			,
+            {
+                "scale": 6,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/yecha/yecha",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "碧水夜叉",
+                "ID": 30008
+            }
+			,
+            {
+                "scale": 6,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/baihuaxian/baihuaxian_colour_01",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "百花仙",
+                "ID": 30009
+            }
+			,
+            {
+                "scale": 6,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/zhangzheshujing/zhangzheshujing",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "古木树精",
+                "ID": 30010
+            }
+			,
+            {
+                "scale": 6,
+                "icon": "DesignRes/01Monster",
+                "resPath": "Character/Monster/baihuaxian/baihuaxian",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "百花仙",
+                "ID": 30009
+            }
+        ]
+    },
+   {
+        "name": "NPC",
+        "type": 2,
+        "icon": "ui/SelectActor/guojia01_selected",
+        "children": [
+            {
+                "scale": 7,
+                "icon": "DesignRes/01NPC",
+                "resPath": "Character/NPC/Npc001",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "Npc001",
+                "ID": 20001
+            },
+            {
+                "scale": 8,
+                "icon": "DesignRes/01NPC",
+                "resPath": "Character/NPC/Npc002",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "打铁小哥",
+                "ID": 40102
+            }
+        ]
+    },
+    {
+        "name": "触发器",
+        "type": 16,
+        "icon": "DesignRes/触发器",
+        "children": [
+            {
+                "scale": 2,
+                "icon": "DesignRes/触发器",
+                "resPath": "DesignRes/TriggerCube",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "范围触发器",
+                "ID": 20001
+            },
+			{
+                "scale": 2,
+                "icon": "DesignRes/触发器",
+                "resPath": "DesignRes/TriggerCube",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "数量触发器",
+                "ID": 20001
+            },
+			{
+                "scale": 2,
+                "icon": "DesignRes/触发器",
+                "resPath": "DesignRes/TriggerCube",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "时间触发器",
+                "ID": 20001
+            }
+        ]
+    },
+    {
+        "name": "屏障",
+        "type": 18,
+        "icon": "ui/SelectActor/guojia01_selected",
+        "children": [
+            {
+                "scale": 4,
+                "icon": "ui/SelectActor/guojia03",
+                "resPath": "Effect/Common/eff_common@roadblock",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "可摧毁屏障",
+                "ID": 90002
+            },
+            {
+                "scale": 5,
+                "icon": "ui/SelectActor/guojia03",
+                "resPath": "Effect/Common/eff_common@roadblock",
+                "triggerType": 0,
+                "triggerRadius": 0,
+                "delayTime": 0,
+                "name": "不可摧毁屏障",
+                "ID": 90002
+            }
+        ]
+    }
+]
+}

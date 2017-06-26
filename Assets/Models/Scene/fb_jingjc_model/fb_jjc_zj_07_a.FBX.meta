@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 85c7ad6a114c73e4d90e3422030ded21
+timeCreated: 1478675080
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: fb-jjc-zj-07_a
+    100002: fb-jjc-zj-07_b
+    100004: fb-jjc-zj-07_c
+    100006: fb-jjc-zj-07_d
+    100008: fb-jjc-zj-07_e
+    100010: fb-jjc-zj-07_f
+    100012: //RootNode
+    100014: fb_jjc_zj_07_a_a
+    100016: fb_jjc_zj_07_a_b
+    100018: fb_jjc_zj_07_b_a
+    100020: fb_jjc_zj_07_b_b
+    100022: fb_jjc_zj_07_c_a
+    100024: fb_jjc_zj_07_c_b
+    100026: fb_jjc_zj_07_e
+    100028: fb_jjc_zj_07_f
+    100030: fb_jjc_zj_07_a
+    100032: fb_jjc_zj_07_b
+    100034: fb_jjc_zj_07_d
+    100036: fb_jjc_zj_07_d 1
+    100038: fb_jjc_zj_07_c
+    100040: fb_jjc_dimian_01_b
+    400000: fb-jjc-zj-07_a
+    400002: fb-jjc-zj-07_b
+    400004: fb-jjc-zj-07_c
+    400006: fb-jjc-zj-07_d
+    400008: fb-jjc-zj-07_e
+    400010: fb-jjc-zj-07_f
+    400012: //RootNode
+    400014: fb_jjc_zj_07_a_a
+    400016: fb_jjc_zj_07_a_b
+    400018: fb_jjc_zj_07_b_a
+    400020: fb_jjc_zj_07_b_b
+    400022: fb_jjc_zj_07_c_a
+    400024: fb_jjc_zj_07_c_b
+    400026: fb_jjc_zj_07_e
+    400028: fb_jjc_zj_07_f
+    400030: fb_jjc_zj_07_a
+    400032: fb_jjc_zj_07_b
+    400034: fb_jjc_zj_07_d
+    400036: fb_jjc_zj_07_d 1
+    400038: fb_jjc_zj_07_c
+    400040: fb_jjc_dimian_01_b
+    2300000: fb-jjc-zj-07_a
+    2300002: fb-jjc-zj-07_b
+    2300004: fb-jjc-zj-07_c
+    2300006: fb-jjc-zj-07_d
+    2300008: fb-jjc-zj-07_e
+    2300010: fb-jjc-zj-07_f
+    2300012: fb_jjc_zj_07_a_a
+    2300014: fb_jjc_zj_07_a_b
+    2300016: fb_jjc_zj_07_b_a
+    2300018: fb_jjc_zj_07_b_b
+    2300020: fb_jjc_zj_07_c_a
+    2300022: fb_jjc_zj_07_c_b
+    2300024: fb_jjc_zj_07_e
+    2300026: fb_jjc_zj_07_f
+    2300028: fb_jjc_zj_07_a
+    2300030: fb_jjc_zj_07_b
+    2300032: fb_jjc_zj_07_d
+    2300034: fb_jjc_zj_07_d 1
+    2300036: fb_jjc_zj_07_c
+    2300038: fb_jjc_dimian_01_b
+    2300040: //RootNode
+    3300000: fb-jjc-zj-07_a
+    3300002: fb-jjc-zj-07_b
+    3300004: fb-jjc-zj-07_c
+    3300006: fb-jjc-zj-07_d
+    3300008: fb-jjc-zj-07_e
+    3300010: fb-jjc-zj-07_f
+    3300012: fb_jjc_zj_07_a_a
+    3300014: fb_jjc_zj_07_a_b
+    3300016: fb_jjc_zj_07_b_a
+    3300018: fb_jjc_zj_07_b_b
+    3300020: fb_jjc_zj_07_c_a
+    3300022: fb_jjc_zj_07_c_b
+    3300024: fb_jjc_zj_07_e
+    3300026: fb_jjc_zj_07_f
+    3300028: fb_jjc_zj_07_a
+    3300030: fb_jjc_zj_07_b
+    3300032: fb_jjc_zj_07_d
+    3300034: fb_jjc_zj_07_d 1
+    3300036: fb_jjc_zj_07_c
+    3300038: fb_jjc_dimian_01_b
+    3300040: //RootNode
+    4300000: fb-jjc-zj-07_e
+    4300002: fb-jjc-zj-07_c
+    4300004: fb-jjc-zj-07_a
+    4300006: fb-jjc-zj-07_b
+    4300008: fb-jjc-zj-07_d
+    4300010: fb-jjc-zj-07_f
+    4300012: fb_jjc_zj_07_e
+    4300014: fb_jjc_zj_07_c_a
+    4300016: fb_jjc_zj_07_a_a
+    4300018: fb_jjc_zj_07_b_a
+    4300020: fb_jjc_zj_07_f
+    4300022: fb_jjc_zj_07_b_b
+    4300024: fb_jjc_zj_07_a_b
+    4300026: fb_jjc_zj_07_c_b
+    4300028: fb_jjc_zj_07_a
+    4300030: fb_jjc_zj_07_b
+    4300032: fb_jjc_zj_07_d
+    4300034: fb_jjc_zj_07_d
+    4300036: fb_jjc_zj_07_c
+    4300038: fb_jjc_dimian_01_b
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1000 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Project Name="LuaPrj.luaprj" >
+    <Filter Name="Lua" Directory=".\..\Lua" >
+        <LuaFile RelativePath=".\..\Lua\Editor.lua" />
+        <LuaFile RelativePath=".\..\Lua\Game.lua" />
+        <LuaFile RelativePath=".\..\Lua\Main.lua" />
+        <Filter Name="3rd" Directory=".\..\Lua\3rd" >
+            <Filter Name="cjson" Directory=".\..\Lua\3rd\cjson" >
+                <LuaFile RelativePath=".\..\Lua\3rd\cjson\json2lua.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\cjson\lua2json.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\cjson\test.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\cjson\util.lua" />
+            </Filter>
+            <Filter Name="luabitop" Directory=".\..\Lua\3rd\luabitop" >
+                <LuaFile RelativePath=".\..\Lua\3rd\luabitop\bitbench.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\luabitop\bittest.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\luabitop\installpath.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\luabitop\md5test.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\luabitop\nsievebits.lua" />
+                <Filter Name="doc" Directory=".\..\Lua\3rd\luabitop\doc" >
+                    <Filter Name="img" Directory=".\..\Lua\3rd\luabitop\doc\img" />
+                </Filter>
+            </Filter>
+            <Filter Name="messagepack" Directory=".\..\Lua\3rd\messagepack" >
+                <LuaFile RelativePath=".\..\Lua\3rd\messagepack\MessagePack.lua" />
+            </Filter>
+            <Filter Name="pbc" Directory=".\..\Lua\3rd\pbc" >
+                <LuaFile RelativePath=".\..\Lua\3rd\pbc\parser.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\pbc\protobuf.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\pbc\test.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\pbc\test2.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\pbc\testparser.lua" />
+            </Filter>
+            <Filter Name="pblua" Directory=".\..\Lua\3rd\pblua" >
+                <LuaFile RelativePath=".\..\Lua\3rd\pblua\login_pb.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\pblua\person_pb.lua" />
+            </Filter>
+            <Filter Name="sproto" Directory=".\..\Lua\3rd\sproto" >
+                <LuaFile RelativePath=".\..\Lua\3rd\sproto\print_r.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\sproto\sproto.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\sproto\sprotoparser.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\sproto\test.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\sproto\testall.lua" />
+                <LuaFile RelativePath=".\..\Lua\3rd\sproto\testrpc.lua" />
+            </Filter>
+        </Filter>
+        <Filter Name="Common" Directory=".\..\Lua\Common" >
+            <LuaFile RelativePath=".\..\Lua\Common\CombatScene.lua" />
+            <LuaFile RelativePath=".\..\Lua\Common\constant.lua" />
+            <LuaFile RelativePath=".\..\Lua\Common\SyncManager.lua" />
+            <Filter Name="basic" Directory=".\..\Lua\Common\basic" >
+                <LuaFile RelativePath=".\..\Lua\Common\basic\Bit.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\Event.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\functions.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\Localization.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\LuaObject.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\MathHelper.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\SceneObject.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\SceneObject2.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\table.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\TickObject.lua" />
+                <LuaFile RelativePath=".\..\Lua\Common\basic\Timer.lua" />
+            </Filter>
+            <Filter Name="combat" Directory=".\..\Lua\Common\combat" >
+                <Filter Name="Entity" Directory=".\..\Lua\Common\combat\Entity" >
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Bullet.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\CommonPuppet.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\ConveyTool.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Drop.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Dummy.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\DungeonNPC.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\EntityManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\EventManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\HatredManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Hero.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Monster.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\NPC.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Pet.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Puppet.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Summon.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Toy.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\WildPet.lua" />
+                    <Filter Name="Behavior" Directory=".\..\Lua\Common\combat\Entity\Behavior" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Behavior\CommonBehavior.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Behavior\MotionEffects.lua" />
+                    </Filter>
+                    <Filter Name="Delegate" Directory=".\..\Lua\Common\combat\Entity\Delegate" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Delegate\EntityDelegate.lua" />
+                    </Filter>
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\EmptyGO.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\BaseObject.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\RushMonster.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Entity\Trick.lua" />
+                </Filter>
+                <Filter Name="Skill" Directory=".\..\Lua\Common\combat\Skill" >
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buff.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\BuffManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\CommandManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skill.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillAPI.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillConst.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillEffect.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillFormula.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillUp.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\StatusManager.lua" />
+                    <Filter Name="Buffs" Directory=".\..\Lua\Common\combat\Skill\Buffs" >
+                        <Filter Name="Common" Directory=".\..\Lua\Common\combat\Skill\Buffs\Common" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\ArmorBreak.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\AttackDefenceUp.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\BeatBack.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Bleeding.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Burn.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Charm.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\CommonAttribute.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Digestion.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Dizzy.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\DodgeUp.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\ExpUp.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Fear.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\FireDefenceUp.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\HealBlock.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Hp.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Lock.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\LowerAttack.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\LowerDefense.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\LowerHit.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\MagicUp.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\MagicUp2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Petrifaction.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\PhysicAttack.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\PhysicAttackUp.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Poison.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Poison2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Poison3.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\RecoverWithDamage.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Shield.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Shield2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Slience.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\SlowDown.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\SuperArmor.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\ToxicArmor.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\ToxicArmorBuff.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\DamageChange.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\DamageChange2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\DamageChange3.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\DamageChange4.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\DamageChange5.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Invincible.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Shield3.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\CureChange.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\SkillParaChange.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\SuckBlood.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\CommonAttribute2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\ExpUp2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\HatredChange.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\HatredChange2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Common\Invincible2.lua" />
+                        </Filter>
+                        <Filter Name="Wizard" Directory=".\..\Lua\Common\combat\Skill\Buffs\Wizard" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Buffs\Wizard\313.lua" />
+                        </Filter>
+                    </Filter>
+                    <Filter Name="SkillEffects" Directory=".\..\Lua\Common\combat\Skill\SkillEffects" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillEffects\1.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillEffects\2.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillEffects\3.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillEffects\4.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillEffects\5.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\SkillEffects\Test.lua" />
+                    </Filter>
+                    <Filter Name="Skills" Directory=".\..\Lua\Common\combat\Skill\Skills" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Test.lua" />
+                        <Filter Name="Archer" Directory=".\..\Lua\Common\combat\Skill\Skills\Archer" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\401.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\402.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\403.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\404.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\413.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\414.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\422.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\423.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\431.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\434.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\442.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Archer\443.lua" />
+                        </Filter>
+                        <Filter Name="Boxer" Directory=".\..\Lua\Common\combat\Skill\Skills\Boxer" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\201.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\202.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\203.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\204.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\212.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\214.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\222.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\223.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\233.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\234.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\241.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Boxer\243.lua" />
+                        </Filter>
+                        <Filter Name="Common" Directory=".\..\Lua\Common\combat\Skill\Skills\Common" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\1.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\2.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\StageMiddleSkill.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\StageSkill.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\10.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\11.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\12.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\3.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\4.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\5.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\6.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\7.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\8.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Common\9.lua" />
+                        </Filter>
+                        <Filter Name="Monster" Directory=".\..\Lua\Common\combat\Skill\Skills\Monster" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10001.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10002.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10003.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10004.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10005.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10006.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10007.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10011.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10041.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10051.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10061.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10081.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10101.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10111.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\20001.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\20002.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\20004.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\20006.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\CommonAttack.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10031.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10171.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Monster\10191.lua" />
+                        </Filter>
+                        <Filter Name="Sword" Directory=".\..\Lua\Common\combat\Skill\Skills\Sword" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\100.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\101.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\102.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\103.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\104.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\111.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\113.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\123.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\131.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\132.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\141.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\143.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\161.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Sword\199.lua" />
+                        </Filter>
+                        <Filter Name="Wizard" Directory=".\..\Lua\Common\combat\Skill\Skills\Wizard" >
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\301.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\302.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\303.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\304.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\311.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\313.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\314.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\322.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\324.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\332.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\333.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\334.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\341.lua" />
+                            <LuaFile RelativePath=".\..\Lua\Common\combat\Skill\Skills\Wizard\344.lua" />
+                        </Filter>
+                    </Filter>
+                </Filter>
+                <Filter Name="State" Directory=".\..\Lua\Common\combat\State" >
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\State\AttackState.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\State\IdleState.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\State\NullState.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\State\PatrolState.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\State\State.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\State\StateManager.lua" />
+                    <Filter Name="Dummy" Directory=".\..\Lua\Common\combat\State\Dummy" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Dummy\DummyAttackState.lua" />
+                    </Filter>
+                    <Filter Name="Monster" Directory=".\..\Lua\Common\combat\State\Monster" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Monster\MonsterAttackState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Monster\MonsterPatrolState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Monster\PursuitState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Monster\MonsterRushPatrolState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Monster\MonsterRushState.lua" />
+                    </Filter>
+                    <Filter Name="NPC" Directory=".\..\Lua\Common\combat\State\NPC" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\NPC\GotoState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\NPC\NPCPatrolState.lua" />
+                    </Filter>
+                    <Filter Name="Pet" Directory=".\..\Lua\Common\combat\State\Pet" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Pet\PetAttackState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Pet\PetFollowState.lua" />
+                    </Filter>
+                    <Filter Name="Skill" Directory=".\..\Lua\Common\combat\State\Skill" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Skill\CharmState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Skill\FearState.lua" />
+                    </Filter>
+                    <Filter Name="WildPet" Directory=".\..\Lua\Common\combat\State\WildPet" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\WildPet\PetPatrolState.lua" />
+                    </Filter>
+                    <Filter Name="HookHero" Directory=".\..\Lua\Common\combat\State\HookHero" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\HookHero\HookAttackState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\HookHero\HookPatrolState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\HookHero\WildHookState.lua" />
+                    </Filter>
+                    <Filter Name="Hero" Directory=".\..\Lua\Common\combat\State\Hero" >
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Hero\HeroAttackState.lua" />
+                        <LuaFile RelativePath=".\..\Lua\Common\combat\State\Hero\KillMonsterState.lua" />
+                    </Filter>
+                </Filter>
+                <Filter Name="Trigger" Directory=".\..\Lua\Common\combat\Trigger" >
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Trigger\AreaTrigger.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Trigger\AreaTriggerManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Trigger\DatasTrigger.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Trigger\NumsTrigger.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Trigger\TimerTrigger.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Trigger\TriggersManager.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Common\combat\Trigger\UnitSetTrigger.lua" />
+                </Filter>
+            </Filter>
+        </Filter>
+        <Filter Name="Logic" Directory=".\..\Lua\Logic" >
+            <LuaFile RelativePath=".\..\Lua\Logic\AOIManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\ArenaManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\DropManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\DungeonManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\EnergyManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\GoldenFingerManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\MyHeroManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\PKManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\SceneManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\TargetManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\TeamDungeonManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\TeamManager.lua" />
+            <Filter Name="Bag" Directory=".\..\Lua\Logic\Bag" >
+                <LuaFile RelativePath=".\..\Lua\Logic\Bag\BagManager.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Bag\ItemType.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Bag\QualityConst.lua" />
+            </Filter>
+            <Filter Name="Dungeon" Directory=".\..\Lua\Logic\Dungeon" >
+                <LuaFile RelativePath=".\..\Lua\Logic\Dungeon\Chapter.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Dungeon\ChapterReward.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Dungeon\Dungeon.lua" />
+            </Filter>
+            <Filter Name="Effect" Directory=".\..\Lua\Logic\Effect" >
+                <LuaFile RelativePath=".\..\Lua\Logic\Effect\ArrestPet.lua" />
+            </Filter>
+            <Filter Name="Entity" Directory=".\..\Lua\Logic\Entity" >
+                <Filter Name="Attribute" Directory=".\..\Lua\Logic\Entity\Attribute" >
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Attribute\AttributeConst.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Attribute\VocationConst.lua" />
+                </Filter>
+                <Filter Name="Behavior" Directory=".\..\Lua\Logic\Entity\Behavior" >
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\Behavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\BulletBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\ChatBar.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\DropBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\DummyBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\DungeonNPCBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\HeroBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\HPBar.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\MonsterBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\NameBar.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\NPCBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\PetBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\SummonBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\ToyBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\WildPetBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\EmptyGOBehavior.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\DungeonGuideBar.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Behavior\TrickBehavior.lua" />
+                </Filter>
+                <Filter Name="Delegate" Directory=".\..\Lua\Logic\Entity\Delegate" >
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Delegate\Delegate.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Delegate\DummyDelegate.lua" />
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\Delegate\MonsterDelegate.lua" />
+                </Filter>
+                <Filter Name="View" Directory=".\..\Lua\Logic\Entity\View" >
+                    <LuaFile RelativePath=".\..\Lua\Logic\Entity\View\DropPickedEffect.lua" />
+                </Filter>
+            </Filter>
+            <Filter Name="LowFly" Directory=".\..\Lua\Logic\LowFly" >
+                <LuaFile RelativePath=".\..\Lua\Logic\LowFly\LowFlyManager.lua" />
+            </Filter>
+            <Filter Name="SceneWidget" Directory=".\..\Lua\Logic\SceneWidget" >
+                <LuaFile RelativePath=".\..\Lua\Logic\SceneWidget\Barrier.lua" />
+            </Filter>
+            <Filter Name="Scheme" Directory=".\..\Lua\Logic\Scheme" >
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\activity_check_in.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\activity_daily.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\challenge_arena.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\challenge_main_dungeon.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\challenge_team_dungeon.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_art_resource.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_char_chinese.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_fight_base.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_item.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_levels.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_npc.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_parameter_formula.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_scene.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_sound_resource.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\common_system_list.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\equipment_base.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\equipment_jewel.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\equipment_refine.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\equipment_star.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\equipment_strengthen.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\growing_actor.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\growing_pet.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\growing_skill.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\growing_talent.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\pvp_country.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\system_friends_chat.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\system_login_create.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\system_store.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\system_task.lua" />
+                <Filter Name=".svn" Directory=".\..\Lua\Logic\Scheme\.svn" >
+                    <Filter Name="pristine" Directory=".\..\Lua\Logic\Scheme\.svn\pristine" >
+                        <Filter Name="00" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\00" />
+                        <Filter Name="02" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\02" />
+                        <Filter Name="03" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\03" />
+                        <Filter Name="04" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\04" />
+                        <Filter Name="05" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\05" />
+                        <Filter Name="06" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\06" />
+                        <Filter Name="07" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\07" />
+                        <Filter Name="08" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\08" />
+                        <Filter Name="09" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\09" />
+                        <Filter Name="0a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\0a" />
+                        <Filter Name="0b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\0b" />
+                        <Filter Name="0c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\0c" />
+                        <Filter Name="0d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\0d" />
+                        <Filter Name="0e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\0e" />
+                        <Filter Name="0f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\0f" />
+                        <Filter Name="10" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\10" />
+                        <Filter Name="11" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\11" />
+                        <Filter Name="12" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\12" />
+                        <Filter Name="13" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\13" />
+                        <Filter Name="14" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\14" />
+                        <Filter Name="15" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\15" />
+                        <Filter Name="17" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\17" />
+                        <Filter Name="18" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\18" />
+                        <Filter Name="19" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\19" />
+                        <Filter Name="1a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\1a" />
+                        <Filter Name="1b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\1b" />
+                        <Filter Name="1c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\1c" />
+                        <Filter Name="1e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\1e" />
+                        <Filter Name="1f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\1f" />
+                        <Filter Name="20" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\20" />
+                        <Filter Name="21" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\21" />
+                        <Filter Name="22" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\22" />
+                        <Filter Name="23" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\23" />
+                        <Filter Name="24" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\24" />
+                        <Filter Name="25" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\25" />
+                        <Filter Name="26" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\26" />
+                        <Filter Name="27" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\27" />
+                        <Filter Name="28" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\28" />
+                        <Filter Name="29" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\29" />
+                        <Filter Name="2a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\2a" />
+                        <Filter Name="2b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\2b" />
+                        <Filter Name="2c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\2c" />
+                        <Filter Name="2d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\2d" />
+                        <Filter Name="2e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\2e" />
+                        <Filter Name="2f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\2f" />
+                        <Filter Name="30" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\30" />
+                        <Filter Name="31" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\31" />
+                        <Filter Name="32" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\32" />
+                        <Filter Name="33" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\33" />
+                        <Filter Name="34" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\34" />
+                        <Filter Name="35" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\35" />
+                        <Filter Name="36" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\36" />
+                        <Filter Name="37" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\37" />
+                        <Filter Name="38" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\38" />
+                        <Filter Name="39" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\39" />
+                        <Filter Name="3a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\3a" />
+                        <Filter Name="3b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\3b" />
+                        <Filter Name="3c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\3c" />
+                        <Filter Name="3d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\3d" />
+                        <Filter Name="3e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\3e" />
+                        <Filter Name="3f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\3f" />
+                        <Filter Name="40" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\40" />
+                        <Filter Name="41" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\41" />
+                        <Filter Name="42" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\42" />
+                        <Filter Name="43" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\43" />
+                        <Filter Name="45" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\45" />
+                        <Filter Name="46" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\46" />
+                        <Filter Name="47" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\47" />
+                        <Filter Name="48" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\48" />
+                        <Filter Name="49" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\49" />
+                        <Filter Name="4a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\4a" />
+                        <Filter Name="4b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\4b" />
+                        <Filter Name="4c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\4c" />
+                        <Filter Name="4d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\4d" />
+                        <Filter Name="4e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\4e" />
+                        <Filter Name="4f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\4f" />
+                        <Filter Name="50" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\50" />
+                        <Filter Name="51" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\51" />
+                        <Filter Name="52" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\52" />
+                        <Filter Name="53" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\53" />
+                        <Filter Name="54" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\54" />
+                        <Filter Name="55" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\55" />
+                        <Filter Name="56" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\56" />
+                        <Filter Name="57" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\57" />
+                        <Filter Name="58" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\58" />
+                        <Filter Name="59" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\59" />
+                        <Filter Name="5a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\5a" />
+                        <Filter Name="5b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\5b" />
+                        <Filter Name="5c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\5c" />
+                        <Filter Name="5d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\5d" />
+                        <Filter Name="5f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\5f" />
+                        <Filter Name="60" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\60" />
+                        <Filter Name="61" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\61" />
+                        <Filter Name="62" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\62" />
+                        <Filter Name="63" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\63" />
+                        <Filter Name="64" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\64" />
+                        <Filter Name="65" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\65" />
+                        <Filter Name="66" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\66" />
+                        <Filter Name="67" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\67" />
+                        <Filter Name="68" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\68" />
+                        <Filter Name="69" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\69" />
+                        <Filter Name="6a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\6a" />
+                        <Filter Name="6b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\6b" />
+                        <Filter Name="6c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\6c" />
+                        <Filter Name="6d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\6d" />
+                        <Filter Name="6e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\6e" />
+                        <Filter Name="6f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\6f" />
+                        <Filter Name="70" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\70" />
+                        <Filter Name="71" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\71" />
+                        <Filter Name="72" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\72" />
+                        <Filter Name="73" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\73" />
+                        <Filter Name="74" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\74" />
+                        <Filter Name="75" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\75" />
+                        <Filter Name="76" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\76" />
+                        <Filter Name="77" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\77" />
+                        <Filter Name="78" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\78" />
+                        <Filter Name="79" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\79" />
+                        <Filter Name="7a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\7a" />
+                        <Filter Name="7b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\7b" />
+                        <Filter Name="7c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\7c" />
+                        <Filter Name="7d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\7d" />
+                        <Filter Name="7e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\7e" />
+                        <Filter Name="7f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\7f" />
+                        <Filter Name="80" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\80" />
+                        <Filter Name="81" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\81" />
+                        <Filter Name="83" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\83" />
+                        <Filter Name="84" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\84" />
+                        <Filter Name="86" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\86" />
+                        <Filter Name="87" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\87" />
+                        <Filter Name="88" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\88" />
+                        <Filter Name="89" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\89" />
+                        <Filter Name="8a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\8a" />
+                        <Filter Name="8b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\8b" />
+                        <Filter Name="8c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\8c" />
+                        <Filter Name="8d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\8d" />
+                        <Filter Name="8e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\8e" />
+                        <Filter Name="8f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\8f" />
+                        <Filter Name="90" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\90" />
+                        <Filter Name="91" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\91" />
+                        <Filter Name="92" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\92" />
+                        <Filter Name="93" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\93" />
+                        <Filter Name="94" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\94" />
+                        <Filter Name="95" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\95" />
+                        <Filter Name="96" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\96" />
+                        <Filter Name="97" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\97" />
+                        <Filter Name="99" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\99" />
+                        <Filter Name="9a" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\9a" />
+                        <Filter Name="9b" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\9b" />
+                        <Filter Name="9c" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\9c" />
+                        <Filter Name="9d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\9d" />
+                        <Filter Name="9e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\9e" />
+                        <Filter Name="9f" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\9f" />
+                        <Filter Name="a0" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a0" />
+                        <Filter Name="a1" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a1" />
+                        <Filter Name="a3" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a3" />
+                        <Filter Name="a4" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a4" />
+                        <Filter Name="a5" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a5" />
+                        <Filter Name="a6" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a6" />
+                        <Filter Name="a7" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a7" />
+                        <Filter Name="a9" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a9" />
+                        <Filter Name="aa" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\aa" />
+                        <Filter Name="ab" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ab" />
+                        <Filter Name="ac" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ac" />
+                        <Filter Name="ad" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ad" />
+                        <Filter Name="af" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\af" />
+                        <Filter Name="b0" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b0" />
+                        <Filter Name="b1" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b1" />
+                        <Filter Name="b2" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b2" />
+                        <Filter Name="b3" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b3" />
+                        <Filter Name="b4" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b4" />
+                        <Filter Name="b5" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b5" />
+                        <Filter Name="b6" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b6" />
+                        <Filter Name="b7" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b7" />
+                        <Filter Name="b8" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b8" />
+                        <Filter Name="b9" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\b9" />
+                        <Filter Name="ba" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ba" />
+                        <Filter Name="bb" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\bb" />
+                        <Filter Name="bc" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\bc" />
+                        <Filter Name="bd" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\bd" />
+                        <Filter Name="be" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\be" />
+                        <Filter Name="c0" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c0" />
+                        <Filter Name="c1" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c1" />
+                        <Filter Name="c2" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c2" />
+                        <Filter Name="c3" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c3" />
+                        <Filter Name="c4" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c4" />
+                        <Filter Name="c5" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c5" />
+                        <Filter Name="c6" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c6" />
+                        <Filter Name="c7" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c7" />
+                        <Filter Name="c8" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c8" />
+                        <Filter Name="c9" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\c9" />
+                        <Filter Name="cc" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\cc" />
+                        <Filter Name="cd" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\cd" />
+                        <Filter Name="ce" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ce" />
+                        <Filter Name="cf" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\cf" />
+                        <Filter Name="d0" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d0" />
+                        <Filter Name="d1" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d1" />
+                        <Filter Name="d2" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d2" />
+                        <Filter Name="d3" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d3" />
+                        <Filter Name="d4" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d4" />
+                        <Filter Name="d5" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d5" />
+                        <Filter Name="d6" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d6" />
+                        <Filter Name="d7" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d7" />
+                        <Filter Name="d8" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d8" />
+                        <Filter Name="d9" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\d9" />
+                        <Filter Name="da" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\da" />
+                        <Filter Name="db" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\db" />
+                        <Filter Name="dc" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\dc" />
+                        <Filter Name="dd" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\dd" />
+                        <Filter Name="de" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\de" />
+                        <Filter Name="df" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\df" />
+                        <Filter Name="e0" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e0" />
+                        <Filter Name="e1" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e1" />
+                        <Filter Name="e2" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e2" />
+                        <Filter Name="e3" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e3" />
+                        <Filter Name="e4" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e4" />
+                        <Filter Name="e5" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e5" />
+                        <Filter Name="e6" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e6" />
+                        <Filter Name="e8" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e8" />
+                        <Filter Name="e9" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\e9" />
+                        <Filter Name="ea" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ea" />
+                        <Filter Name="eb" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\eb" />
+                        <Filter Name="ec" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ec" />
+                        <Filter Name="ed" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ed" />
+                        <Filter Name="ef" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ef" />
+                        <Filter Name="f0" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f0" />
+                        <Filter Name="f1" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f1" />
+                        <Filter Name="f2" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f2" />
+                        <Filter Name="f3" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f3" />
+                        <Filter Name="f4" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f4" />
+                        <Filter Name="f5" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f5" />
+                        <Filter Name="f7" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f7" />
+                        <Filter Name="f8" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f8" />
+                        <Filter Name="f9" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f9" />
+                        <Filter Name="fa" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\fa" />
+                        <Filter Name="fb" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\fb" />
+                        <Filter Name="fc" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\fc" />
+                        <Filter Name="fd" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\fd" />
+                        <Filter Name="fe" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\fe" />
+                        <Filter Name="ff" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ff" />
+                        <Filter Name="44" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\44" />
+                        <Filter Name="ee" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ee" />
+                        <Filter Name="16" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\16" />
+                        <Filter Name="1d" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\1d" />
+                        <Filter Name="5e" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\5e" />
+                        <Filter Name="82" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\82" />
+                        <Filter Name="85" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\85" />
+                        <Filter Name="a2" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a2" />
+                        <Filter Name="a8" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\a8" />
+                        <Filter Name="bf" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\bf" />
+                        <Filter Name="ca" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ca" />
+                        <Filter Name="f6" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\f6" />
+                        <Filter Name="cb" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\cb" />
+                        <Filter Name="ae" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\ae" />
+                        <Filter Name="98" Directory=".\..\Lua\Logic\Scheme\.svn\pristine\98" />
+                    </Filter>
+                    <Filter Name="tmp" Directory=".\..\Lua\Logic\Scheme\.svn\tmp" />
+                </Filter>
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\MotionEffects.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\equipment_gem.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\growing_fashion.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Scheme\system_faction.lua" />
+            </Filter>
+            <LuaFile RelativePath=".\..\Lua\Logic\CameraManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\GlobalManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\OnHookCombat.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\FactionManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\FightManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\GameDisplayManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\SoundManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\TaskManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Logic\EntityBehaviorManager.lua" />
+            <Filter Name="Task" Directory=".\..\Lua\Logic\Task" >
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\collectTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\dailyActivityTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\escortTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\fightPowerTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\gatherTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\killMonsterTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\killPlayerTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\levelTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\mainDungeonTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\systemOperationTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\talkBackTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\talkTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\TaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\teamDungeonTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\triggerMechanismTaskData.lua" />
+                <LuaFile RelativePath=".\..\Lua\Logic\Task\useItemTaskData.lua" />
+            </Filter>
+        </Filter>
+        <Filter Name="Model" Directory=".\..\Lua\Model" >
+            <LuaFile RelativePath=".\..\Lua\Model\Schemes.lua" />
+        </Filter>
+        <Filter Name="Network" Directory=".\..\Lua\Network" >
+            <LuaFile RelativePath=".\..\Lua\Network\MessageID.lua" />
+            <LuaFile RelativePath=".\..\Lua\Network\MessageManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\Network\MessageRPCManager.lua" />
+        </Filter>
+        <Filter Name="UI" Directory=".\..\Lua\UI" >
+            <LuaFile RelativePath=".\..\Lua\UI\ChatManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\ContactManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\DiskData.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\GemManager.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\HpBarUI.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\Joystick.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\LuaUIUtil.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\NameBarUI.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\RepeatItemList.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\SceneLoadingUI.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\TabGroup.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\TextAnchor.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\TouchMove.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\UIGrayMaterial.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\UIManager.lua" />
+            <Filter Name="Controller" Directory=".\..\Lua\UI\Controller" >
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaMatchCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaMatchingUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaMixMatchCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaPetSettingCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaRankListCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaResultCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaRewardCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaSelectCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ArenaTimerUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\BagUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\BuffDetailUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\BuffProgressBarUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\BuyphCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\CampUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ChallengeOverUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ChallengeUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ChangePetSkillUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ChapterrewardCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ChatAdditionUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ChatConsumeUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ChatUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\CommRewardsBoxCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\CommTextTipUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\CommTipBox1Ctrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\CompareEquipTipsUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ConfirmUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ContractSelectNoteUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\CreateRoleUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipGemHandleUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipGemTipUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipGemUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipmentSmeltingUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipmentStrengthenUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipmentUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipmentUpgradeStarUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipTipsUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\EquipTipsUICtrlBase.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FightStatisUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FriendsAddUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FriendsApproveUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FriendsUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\GoldenFingerUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\GrouppetUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ItemTipsUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\KeyBoardUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\LoginPanelUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\LuaCtrlBase.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\MailUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\MainLandUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\MainUITeamCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\NormalShopUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\NPCTalkUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ObtainUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\OverlordlistCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PetImproveUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PetUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PetUpgradeUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PKUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PlayerOpUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PlayerTalkUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ProcessBarUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PromptUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PropertyChangeUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PurchaseUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ResurrectionCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\RoleAttributeUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\RoleInformationUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\RoleUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SceneMapUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SelectRoleUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SelectServerUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SkillSetCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SpeakerUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SplitUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\StampUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SweepCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SwitchChannelUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SystemMsgUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\SystemSettingCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamApplyUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamChangeTargetUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamDungeonEndUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamDungeonUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamInviteUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamOpUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamRankListUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TeamUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TipUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TitleDescripCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\UnLockPetSkillTipUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\WaitServerResponseUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\WanderShopUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\WeaponsUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\WorldMapUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\MallUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\GiftGivingUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\ModifyNameUICtrl.lua" />
+                <Filter Name="PetUIControl" Directory=".\..\Lua\UI\Controller\PetUIControl" >
+                    <LuaFile RelativePath=".\..\Lua\UI\Controller\PetUIControl\PetappearanceUICtrl.lua" />
+                </Filter>
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\CollectUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\DailyTaskCanCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\DailyTaskCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\DailyTaskTip1Ctrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\DailyTaskTip2Ctrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\DrugItemCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FactionApplyUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FactionCreateUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FactionMembersUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FactionPositionUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\FactionUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\MainUITaskCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\PlayerResourceUICtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\RoleappearanceCtrl.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\TaskUICtrl.lua" />
+                <Filter Name="UnionUIControl" Directory=".\..\Lua\UI\Controller\UnionUIControl" >
+                    <LuaFile RelativePath=".\..\Lua\UI\Controller\UnionUIControl\UnionAntagonizeSettingUICtrl.lua" />
+                    <LuaFile RelativePath=".\..\Lua\UI\Controller\UnionUIControl\UnionInformationsUICtrl.lua" />
+                    <LuaFile RelativePath=".\..\Lua\UI\Controller\UnionUIControl\UnionListUICtrl.lua" />
+                    <LuaFile RelativePath=".\..\Lua\UI\Controller\UnionUIControl\UnionMemberUICtrl.lua" />
+                </Filter>
+                <LuaFile RelativePath=".\..\Lua\UI\Controller\RoleItemCtrl.lua" />
+            </Filter>
+            <Filter Name="View" Directory=".\..\Lua\UI\View" >
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaMatch.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaMatchingUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaMixMatch.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaPetSetting.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaRankList.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaResult.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaReward.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaSelect.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ArenaTimerUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\BagItemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\BagUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\BuffProgressBarUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Buyph.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\CampUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ChallengeOverUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ChallengeUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ChangePetSkillUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Chapterreward.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ChatConsumeUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ChatUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\CommRewardsBox.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\CommTextTipUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\CommTipBox1.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\CompareEquipTipsUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ConfirmUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ContractSelectNoteUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\CreateRoleUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipGemHandleUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipGemTipUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipGemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipmentSlotUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipmentSmeltingItemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipmentSmeltingUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipmentStrengthenUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipmentUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipmentUpgradeStarUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipSmeltingPropertyUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipSmeltingReplacePropertyUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\EquipTipsUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FightStatisUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FriendsAddUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FriendsApproveUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FriendsList.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FriendsUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\GoldenFingerUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Grouppetui.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ItemTipsUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ItemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\KeyBoardUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\LoginUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\LuaViewBase.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\MailUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\MainLandUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\NormalShopUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\NPCTalkUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ObtainItemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ObtainUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Overlordlist.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PetImproveUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PetUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PetUpgradeUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PKUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PlayerOpUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PlayerTalkUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ProcessBar.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ProcessBarUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PromptUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PropertyChangeItemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PropertyChangeUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PurchaseItemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PurchaseUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Resurrection.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\RoleAttributeUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\RoleInformationUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\RoleUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SceneMapUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SelectRoleUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SelectServerUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SkillSet.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SpeakerUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SplitUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\StampUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Sweep.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SwitchChannelUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SystemMsgUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\SystemSetting.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamApplyUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamChangeTargetUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamDungeonEndUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamDungeonUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamInviteUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamOpUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamRankListUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TeamUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TestPanel.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TestPanel1.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TipUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TitleDescrip.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TitleItem.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TitleRankItem.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\UnLockPetSkillTipUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\WaitServerResponseUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\WanderShopUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\weaponsui.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\WorldMapUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\MallUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\GiftGivingItemUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\GiftGivingUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\ModifyNameUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Petappearance.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\CollectUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\DailyTask.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\DailyTaskCan.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\DailyTaskTip1.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\DailyTaskTip2.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FactionApplyUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FactionCreateUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FactionMembersUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FactionPositionUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\FactionUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\PlayerResourceUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\Roleappearance.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\TaskUI.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\UnionAntagonizeSetting.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\UnionInformations.lua" />
+                <LuaFile RelativePath=".\..\Lua\UI\View\UnionList.lua" />
+            </Filter>
+            <LuaFile RelativePath=".\..\Lua\UI\DungeonGuideBarUI.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\ChatBarUI.lua" />
+            <LuaFile RelativePath=".\..\Lua\UI\UISwitchManager.lua" />
+        </Filter>
+        <LuaFile RelativePath=".\..\Lua\log.lua" />
+    </Filter>
+</Project>

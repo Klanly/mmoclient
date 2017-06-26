@@ -1,0 +1,115 @@
+enum MSG_LOGIN_ACTIONID
+{
+	MSG_LOGIN_NONE = 0;										// 未定义
+	MSG_LOGIN_REGISTER = 1;									// 注册帐号
+	MSG_LOGIN_LOGINUSER = 2;								// 登录帐号
+	MSG_LOGIN_ACTORLIST = 3;								// 角色列表
+	MSG_LOGIN_CREATEACTOR = 4;								// 创建角色
+	MSG_LOGIN_DELETEACTOR = 5;								// 删除角色
+	MSG_LOGIN_SELETEACTOR = 6;								// 选择角色
+};
+
+/////////////////////////////////////////////////////////////////////////
+// MSG_LOGIN_REGISTER = 1;									// 注册帐号
+message CL_Login_Register{
+	required string UserName = 1;
+	required string Password = 2;
+	required string RegisterOS = 3;
+	required string RegisterHW = 4;
+};
+
+message LC_Login_Register{
+	required uint32 Result = 1;
+};
+//////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
+// MSG_LOGIN_LOGINUSER = 2;									// 登录帐号
+message CL_Login_LoginUser{
+	required string UserName = 1;
+	required string Password = 2;
+	required string LoginOS = 3;
+	required string LoginHW = 4;
+	required uint32 LoginID = 5;
+};
+
+message LC_Login_LoginUser{
+	required uint32 Result = 1;
+};
+//////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
+// MSG_LOGIN_ACTORLIST = 3;									// 角色列表
+message LC_Login_ActorList{
+
+	message ActorInfo{
+		required uint32 ActorID = 1;
+		required string ActorName = 2;
+		required uint32 Level = 3;
+		required uint32 Vocation = 4;
+	};
+
+	repeated ActorInfo ActorList = 1;
+};
+//////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
+// MSG_LOGIN_CREATEACTOR = 4;								// 创建角色
+message CL_Login_CreateActor{
+	required string ActorName = 1;
+	required string CreateOS = 2;
+	required string CreateHW = 3;
+	required uint32 Vocation = 4;
+};
+
+message LC_Login_CreateActor{
+	
+	message ActorInfo{
+		required uint32 ActorID = 1;
+		required string ActorName = 2;
+		required uint32 Level = 3;
+		required uint32 Vocation = 4;
+	};
+	
+	required uint32 Result = 1;
+	optional ActorInfo NewActor = 2;
+};
+//////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
+// MSG_LOGIN_DELETEACTOR = 5;								// 删除角色
+message CL_Login_DeleteActor{
+	required uint32 ActorID = 1;
+	required string ActorName = 2;
+};
+
+message LC_Login_DeleteActor{
+	required uint32 Result = 1;
+	required uint32 ActorID = 2;
+};
+//////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////
+// MSG_LOGIN_SELETEACTOR = 6;								// 选择角色
+message CL_Login_SeleteActor{
+	required uint32 ActorID = 1;
+	required string ActorName = 2;
+};
+
+message LC_Login_SeleteActor{
+	required uint32 Result = 1;
+};
+
+message LS_Login_SeleteActor{
+	required uint32 ClientID = 1;
+	required uint32 UserID = 2;
+	required uint32 ActorID = 3;
+	required string UserName = 4;
+	required string ActorName = 5;
+};
+//////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tlby"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+  <uses-sdk
+      android:minSdkVersion="8"
+      android:targetSdkVersion="21" />
+
+  <application
+  android:theme="@android:style/Theme.NoTitleBar"
+  android:icon="@drawable/app_icon"
+  android:label="@string/app_name"
+    android:name=".MyApplication" >
+    <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="orientation|screenSize|keyboardHidden">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name="com.hf.gamesdk.DLProxyActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            >
+      <intent-filter>
+        <action android:name="com.hf.gamesdk.proxy.activity.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+
+    <activity
+		            android:name="com.alipay.sdk.app.H5PayActivity"
+		        android:configChanges="orientation|keyboardHidden|navigation"
+		            android:exported="false"
+		            android:screenOrientation="behind"
+		            android:windowSoftInputMode="adjustResize|stateHidden" />
+    <service android:name="com.hf.gamesdk.DLProxyService"></service>
+    <!-- 注册Service-->
+  </application>
+
+</manifest>

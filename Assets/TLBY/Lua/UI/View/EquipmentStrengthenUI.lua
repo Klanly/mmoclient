@@ -1,0 +1,83 @@
+----------------------- auto generate code --------------------------
+require "UI/View/LuaViewBase"
+
+local function CreateEquipmentStrengthenUI()
+	local self = CreateViewBase();
+	self.Awake = function()
+		self.Strengthenstoneui = self.transform:FindChild("@Strengthenstoneui").gameObject;
+		self.btndetermine = self.transform:FindChild("@Strengthenstoneui/@btndetermine").gameObject;
+		self.textdetermine = self.transform:FindChild("@Strengthenstoneui/@textdetermine").gameObject;
+		self.decorationchooseStrengthenstone = self.transform:FindChild("@Strengthenstoneui/@decorationchooseStrengthenstone").gameObject;
+		self.bgStrengthenstone3 = self.transform:FindChild("@Strengthenstoneui/@bgStrengthenstone3").gameObject;
+		self.btnStrengthenstoneadd3 = self.transform:FindChild("@Strengthenstoneui/@btnStrengthenstoneadd3").gameObject;
+		self.StrengthenItemQuality3 = self.transform:FindChild("@Strengthenstoneui/@StrengthenItemQuality3").gameObject;
+		self.StrengthenItemIcon3 = self.transform:FindChild("@Strengthenstoneui/@StrengthenItemIcon3").gameObject;
+		self.textstrengthencost3 = self.transform:FindChild("@Strengthenstoneui/@textstrengthencost3").gameObject;
+		self.Strengthenoperatordescribe = self.transform:FindChild("@Strengthenstoneui/@Strengthenoperatordescribe").gameObject;
+		self.Strengthenstonepay = self.transform:FindChild("@Strengthenstoneui/@Strengthenstonepay").gameObject;
+		self.Strengthenstonedescribe = self.transform:FindChild("@Strengthenstoneui/@Strengthenstonedescribe").gameObject;
+		self.bgStrengthenstone2 = self.transform:FindChild("@Strengthenstoneui/@bgStrengthenstone2").gameObject;
+		self.btnStrengthenstoneadd2 = self.transform:FindChild("@Strengthenstoneui/@btnStrengthenstoneadd2").gameObject;
+		self.StrengthenItemQuality2 = self.transform:FindChild("@Strengthenstoneui/@StrengthenItemQuality2").gameObject;
+		self.StrengthenItemIcon2 = self.transform:FindChild("@Strengthenstoneui/@StrengthenItemIcon2").gameObject;
+		self.textstrengthencost2 = self.transform:FindChild("@Strengthenstoneui/@textstrengthencost2").gameObject;
+		self.arrowStrengthenstone = self.transform:FindChild("@Strengthenstoneui/@arrowStrengthenstone").gameObject;
+		self.textstrengthenattribute2 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenattribute2").gameObject;
+		self.textstrengthenlevel2 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenlevel2").gameObject;
+		self.textstrengthenattribute4 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenattribute4").gameObject;
+		self.textstrengthenattribute1 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenattribute1").gameObject;
+		self.textstrengthenlevel1 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenlevel1").gameObject;
+		self.textstrengthenattribute3 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenattribute3").gameObject;
+		self.bgStrengthenstonetitlename = self.transform:FindChild("@Strengthenstoneui/@bgStrengthenstonetitlename").gameObject;
+		self.Strengthenstonetitlename = self.transform:FindChild("@Strengthenstoneui/@Strengthenstonetitlename").gameObject;
+		self.bgStrengthenstone1 = self.transform:FindChild("@Strengthenstoneui/@bgStrengthenstone1").gameObject;
+		self.StrengthenItemQuality1 = self.transform:FindChild("@Strengthenstoneui/@StrengthenItemQuality1").gameObject;
+		self.StrengthenItemIcon1 = self.transform:FindChild("@Strengthenstoneui/@StrengthenItemIcon1").gameObject;
+		self.effectStrengthen = self.transform:FindChild("@Strengthenstoneui/@effectStrengthen").gameObject;
+		self.effectCamera = self.transform:FindChild("@Strengthenstoneui/@effectStrengthen/@effectCamera").gameObject;
+		self.qianghua_succeed = self.transform:FindChild("@Strengthenstoneui/@effectStrengthen/@qianghua_succeed").gameObject;
+		self.glow_common1 = self.transform:FindChild("@Strengthenstoneui/@effectStrengthen/@glow_common1").gameObject;
+		self.glow_common2 = self.transform:FindChild("@Strengthenstoneui/@effectStrengthen/@glow_common2").gameObject;
+		self.qianghua_defeat = self.transform:FindChild("@Strengthenstoneui/@effectStrengthen/@qianghua_defeat").gameObject;
+		self.btnblessselect = self.transform:FindChild("@Strengthenstoneui/@btnblessselect").gameObject;
+		self.bgblessselect = self.transform:FindChild("@Strengthenstoneui/@bgblessselect").gameObject;
+		self.imgStrengthensuccess = self.transform:FindChild("@Strengthenstoneui/@imgStrengthensuccess").gameObject;
+		self.imgStrengthenfailure = self.transform:FindChild("@Strengthenstoneui/@imgStrengthenfailure").gameObject;
+		self.textstrengthenattribute5 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenattribute5").gameObject;
+		self.textstrengthenattribute6 = self.transform:FindChild("@Strengthenstoneui/@textstrengthenattribute6").gameObject;
+		self.equipmentadvancedui = self.transform:FindChild("@equipmentadvancedui").gameObject;
+		self.decorationequipmentadvanced = self.transform:FindChild("@equipmentadvancedui/@decorationequipmentadvanced").gameObject;
+		self.arrowequipmentadvanced = self.transform:FindChild("@equipmentadvancedui/@arrowequipmentadvanced").gameObject;
+		self.textadvancedattribute2 = self.transform:FindChild("@equipmentadvancedui/@textadvancedattribute2").gameObject;
+		self.textadvancedattribute4 = self.transform:FindChild("@equipmentadvancedui/@textadvancedattribute4").gameObject;
+		self.textadvancedattribute1 = self.transform:FindChild("@equipmentadvancedui/@textadvancedattribute1").gameObject;
+		self.textadvancedattribute3 = self.transform:FindChild("@equipmentadvancedui/@textadvancedattribute3").gameObject;
+		self.lvStrengthenstonetitle1 = self.transform:FindChild("@equipmentadvancedui/@lvStrengthenstonetitle1").gameObject;
+		self.lvStrengthenstonetitle2 = self.transform:FindChild("@equipmentadvancedui/@lvStrengthenstonetitle2").gameObject;
+		self.bgStrengthenstonetitle1 = self.transform:FindChild("@equipmentadvancedui/@bgStrengthenstonetitle1").gameObject;
+		self.iconStrengthenstoneQuality1 = self.transform:FindChild("@equipmentadvancedui/@iconStrengthenstoneQuality1").gameObject;
+		self.iconStrengthenstonetitle1 = self.transform:FindChild("@equipmentadvancedui/@iconStrengthenstonetitle1").gameObject;
+		self.bgStrengthenstonetitle2 = self.transform:FindChild("@equipmentadvancedui/@bgStrengthenstonetitle2").gameObject;
+		self.iconStrengthenstoneQuality2 = self.transform:FindChild("@equipmentadvancedui/@iconStrengthenstoneQuality2").gameObject;
+		self.iconStrengthenstonetitle2 = self.transform:FindChild("@equipmentadvancedui/@iconStrengthenstonetitle2").gameObject;
+		self.bgpayicon2 = self.transform:FindChild("@equipmentadvancedui/@bgpayicon2").gameObject;
+		self.payQuality2 = self.transform:FindChild("@equipmentadvancedui/@payQuality2").gameObject;
+		self.payicon2 = self.transform:FindChild("@equipmentadvancedui/@payicon2").gameObject;
+		self.btnAdvancestoneadd2 = self.transform:FindChild("@equipmentadvancedui/@btnAdvancestoneadd2").gameObject;
+		self.equipmentadvanceddescribe = self.transform:FindChild("@equipmentadvancedui/@equipmentadvanceddescribe").gameObject;
+		self.bgpayicon1 = self.transform:FindChild("@equipmentadvancedui/@bgpayicon1").gameObject;
+		self.payQuality1 = self.transform:FindChild("@equipmentadvancedui/@payQuality1").gameObject;
+		self.payicon1 = self.transform:FindChild("@equipmentadvancedui/@payicon1").gameObject;
+		self.btnAdvancestoneadd1 = self.transform:FindChild("@equipmentadvancedui/@btnAdvancestoneadd1").gameObject;
+		self.payiconnumerical1 = self.transform:FindChild("@equipmentadvancedui/@payiconnumerical1").gameObject;
+		self.btnequipmentadvanced = self.transform:FindChild("@equipmentadvancedui/@btnequipmentadvanced").gameObject;
+		self.textequipmentadvanced = self.transform:FindChild("@equipmentadvancedui/@textequipmentadvanced").gameObject;
+		self.payiconnumerical2 = self.transform:FindChild("@equipmentadvancedui/@payiconnumerical2").gameObject;
+		self.textadvancedattribute5 = self.transform:FindChild("@equipmentadvancedui/@textadvancedattribute5").gameObject;
+		self.textadvancedattribute6 = self.transform:FindChild("@equipmentadvancedui/@textadvancedattribute6").gameObject;
+		self.btnHelp = self.transform:FindChild("@btnHelp").gameObject;
+		self.btnclose = self.transform:FindChild("@btnclose").gameObject;
+	end
+	return self;
+end
+EquipmentStrengthenUI = EquipmentStrengthenUI or CreateEquipmentStrengthenUI();

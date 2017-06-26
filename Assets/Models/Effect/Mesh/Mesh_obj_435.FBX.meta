@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 7d61b44081560bc41a5ccc345c7ad171
+timeCreated: 1491889619
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip01
+    100002: body
+    100004: Bone01
+    100006: Bone02
+    100008: Bone03
+    100010: Bone04
+    100012: Bone05
+    100014: Bone06
+    100016: Bone07
+    100018: Bone08
+    100020: Bone09
+    100022: Bone09(mirrored)
+    100024: Bone11
+    100026: Bone11(mirrored)
+    100028: Bone12
+    100030: Bone14
+    100032: Bone15
+    100034: Bone17
+    100036: Bone18
+    100038: Bone20
+    100040: Bone22
+    100042: Bone23
+    100044: Bone26
+    100046: Bone29
+    100048: Bone31
+    100050: Bone34
+    100052: Bone35
+    100054: Bone38
+    100056: Bone39
+    100058: //RootNode
+    100060: Object003
+    100062: Object004
+    100064: v_hit
+    400000: Bip01
+    400002: body
+    400004: Bone01
+    400006: Bone02
+    400008: Bone03
+    400010: Bone04
+    400012: Bone05
+    400014: Bone06
+    400016: Bone07
+    400018: Bone08
+    400020: Bone09
+    400022: Bone09(mirrored)
+    400024: Bone11
+    400026: Bone11(mirrored)
+    400028: Bone12
+    400030: Bone14
+    400032: Bone15
+    400034: Bone17
+    400036: Bone18
+    400038: Bone20
+    400040: Bone22
+    400042: Bone23
+    400044: Bone26
+    400046: Bone29
+    400048: Bone31
+    400050: Bone34
+    400052: Bone35
+    400054: Bone38
+    400056: Bone39
+    400058: //RootNode
+    400060: Object003
+    400062: Object004
+    400064: v_hit
+    2300000: v_hit
+    3300000: v_hit
+    4300000: body
+    4300002: v_hit
+    4300004: Object003
+    4300006: Object004
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: body
+    13700002: Object003
+    13700004: Object004
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip01
+        weight: 1
+      - path: Bip01/Bone01
+        weight: 1
+      - path: Bip01/Bone01/Bone02
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone04
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone04/Bone05
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone04/Bone05/Bone06
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone04/Bone05/Bone06/Bone07
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone04/Bone05/Bone06/Bone07/Bone08
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone04/Bone05/Bone06/Bone17
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone04/Bone26
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone29
+        weight: 1
+      - path: Bip01/Bone01/Bone02/Bone03/Bone31
+        weight: 1
+      - path: Bip01/Bone01/Bone20
+        weight: 1
+      - path: Bip01/Bone01/Bone20/Bone23
+        weight: 1
+      - path: Bip01/Bone01/Bone34
+        weight: 1
+      - path: Bip01/Bone01/Bone34/Bone35
+        weight: 1
+      - path: Bip01/Bone01/Bone38
+        weight: 1
+      - path: Bip01/Bone01/Bone38/Bone39
+        weight: 1
+      - path: Bip01/Bone01/v_hit
+        weight: 1
+      - path: Bip01/Bone12
+        weight: 1
+      - path: Bip01/Bone12/Bone09
+        weight: 1
+      - path: Bip01/Bone12/Bone09/Bone11
+        weight: 1
+      - path: Bip01/Bone12/Bone09(mirrored)
+        weight: 1
+      - path: Bip01/Bone12/Bone09(mirrored)/Bone11(mirrored)
+        weight: 1
+      - path: Bip01/Bone12/Bone14
+        weight: 1
+      - path: Bip01/Bone12/Bone14/Bone15
+        weight: 1
+      - path: Bip01/Bone12/Bone18
+        weight: 1
+      - path: Bip01/Bone12/Bone18/Bone22
+        weight: 1
+      - path: body
+        weight: 1
+      - path: Object003
+        weight: 1
+      - path: Object004
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

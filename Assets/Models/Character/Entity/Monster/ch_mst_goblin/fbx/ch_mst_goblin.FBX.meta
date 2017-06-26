@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 9db40566fe7a04f4a9f58ee606258b40
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bip01
+    100002: bip01 Head
+    100004: bip01 L Calf
+    100006: bip01 L Clavicle
+    100008: bip01 L Finger0
+    100010: bip01 L Finger01
+    100012: bip01 L Finger1
+    100014: bip01 L Finger11
+    100016: bip01 L Foot
+    100018: bip01 L Forearm
+    100020: bip01 L Hand
+    100022: bip01 L Thigh
+    100024: bip01 L Toe0
+    100026: bip01 L UpperArm
+    100028: bip01 Neck
+    100030: bip01 Pelvis
+    100032: bip01 R Calf
+    100034: bip01 R Clavicle
+    100036: bip01 R Finger0
+    100038: bip01 R Finger01
+    100040: bip01 R Finger1
+    100042: bip01 R Finger11
+    100044: bip01 R Foot
+    100046: bip01 R Forearm
+    100048: bip01 R Hand
+    100050: bip01 R Thigh
+    100052: bip01 R Toe0
+    100054: bip01 R UpperArm
+    100056: bip01 Spine
+    100058: bip01 Spine1
+    100060: bone01
+    100062: bone02
+    100064: bone03
+    100066: bone04
+    100068: bone05
+    100070: bone06
+    100072: bone07
+    100074: bone08
+    100076: bone09
+    100078: bone10
+    100080: bone11
+    100082: bone12
+    100084: bone13
+    100086: //RootNode
+    100088: ch_mst_goblin_armor3
+    100090: ch_mst_goblin_body0
+    400000: bip01
+    400002: bip01 Head
+    400004: bip01 L Calf
+    400006: bip01 L Clavicle
+    400008: bip01 L Finger0
+    400010: bip01 L Finger01
+    400012: bip01 L Finger1
+    400014: bip01 L Finger11
+    400016: bip01 L Foot
+    400018: bip01 L Forearm
+    400020: bip01 L Hand
+    400022: bip01 L Thigh
+    400024: bip01 L Toe0
+    400026: bip01 L UpperArm
+    400028: bip01 Neck
+    400030: bip01 Pelvis
+    400032: bip01 R Calf
+    400034: bip01 R Clavicle
+    400036: bip01 R Finger0
+    400038: bip01 R Finger01
+    400040: bip01 R Finger1
+    400042: bip01 R Finger11
+    400044: bip01 R Foot
+    400046: bip01 R Forearm
+    400048: bip01 R Hand
+    400050: bip01 R Thigh
+    400052: bip01 R Toe0
+    400054: bip01 R UpperArm
+    400056: bip01 Spine
+    400058: bip01 Spine1
+    400060: bone01
+    400062: bone02
+    400064: bone03
+    400066: bone04
+    400068: bone05
+    400070: bone06
+    400072: bone07
+    400074: bone08
+    400076: bone09
+    400078: bone10
+    400080: bone11
+    400082: bone12
+    400084: bone13
+    400086: //RootNode
+    400088: ch_mst_goblin_armor3
+    400090: ch_mst_goblin_body0
+    4300000: ch_mst_goblin_armor3
+    4300002: ch_mst_goblin_body0
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: ch_mst_goblin_armor3
+    13700002: ch_mst_goblin_body0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

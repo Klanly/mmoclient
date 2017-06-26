@@ -1,0 +1,150 @@
+12:50:5.396-1: Lua table LoginUI not exists
+
+12:50:8.638-185: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:50:10.225-205: Lua table MainLandUI not exists
+
+12:50:10.243-205: Lua table Joystick not exists
+
+12:50:10.248-205: Lua table TouchMove not exists
+
+12:50:15.967-426: Lua table TopNoticeUI not exists
+
+Destroying object multiple times. Don't use DestroyImmediate on the same object in OnDisable or OnDestroy.
+UnityEngine.Object:DestroyImmediate(Object)
+EffectComp:OnDestroy() (at Assets/Script/main/Component/EffectComp.cs:227)
+
+Destroying object multiple times. Don't use DestroyImmediate on the same object in OnDisable or OnDestroy.
+UnityEngine.Object:DestroyImmediate(Object)
+EffectComp:OnDestroy() (at Assets/Script/main/Component/EffectComp.cs:227)
+
+12:50:39.68-1: Lua table LoginUI not exists
+
+12:50:46.804-458: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:50:48.326-475: Lua table MainLandUI not exists
+
+12:50:48.346-475: Lua table Joystick not exists
+
+12:50:48.351-475: Lua table TouchMove not exists
+
+12:52:22.192-1: Lua table LoginUI not exists
+
+12:52:24.950-150: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:52:26.477-169: Lua table MainLandUI not exists
+
+12:52:26.496-169: Lua table Joystick not exists
+
+12:52:26.501-169: Lua table TouchMove not exists
+
+12:52:31.103-1: Lua table LoginUI not exists
+
+12:52:33.536-137: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:52:35.95-154: Lua table MainLandUI not exists
+
+12:52:35.114-154: Lua table Joystick not exists
+
+12:52:35.120-154: Lua table TouchMove not exists
+
+12:52:41.856-1: Lua table LoginUI not exists
+
+12:52:44.67-128: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:52:45.565-145: Lua table MainLandUI not exists
+
+12:52:45.582-145: Lua table Joystick not exists
+
+12:52:45.589-145: Lua table TouchMove not exists
+
+12:52:50.957-1: Lua table LoginUI not exists
+
+12:52:53.325-131: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:52:55.8-151: Lua table MainLandUI not exists
+
+12:52:55.27-151: Lua table Joystick not exists
+
+12:52:55.32-151: Lua table TouchMove not exists
+
+12:53:41.40-1: Lua table LoginUI not exists
+
+12:53:49.574-494: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:53:51.179-511: Lua table MainLandUI not exists
+
+12:53:51.200-511: Lua table Joystick not exists
+
+12:53:51.205-511: Lua table TouchMove not exists
+
+12:53:58.5-1: Lua table LoginUI not exists
+
+12:54:0.321-127: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:54:1.814-145: Lua table MainLandUI not exists
+
+12:54:1.833-145: Lua table Joystick not exists
+
+12:54:1.838-145: Lua table TouchMove not exists
+
+12:54:6.638-1: Lua table LoginUI not exists
+
+12:54:8.637-101: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+12:54:10.152-119: Lua table MainLandUI not exists
+
+12:54:10.175-119: Lua table Joystick not exists
+
+12:54:10.180-119: Lua table TouchMove not exists
+
+12:54:15.883-348: Lua table TopNoticeUI not exists
+
+12:57:39.507-234: Lua table ChatUI not exists
+
+12:57:44.636-417: Lua table FriendsUI not exists
+
+12:57:44.790-417: Lua table ContractSelectNoteUI not exists
+
+12:57:47.389-471: Lua table MailUI not exists
+
+12:57:54.348-705: Lua table ObtainUI not exists
+
+12:57:54.402-706: Lua table PromptUI not exists
+
+13:8:55.990-98: Lua table Resurrection not exists
+
+14:1:49.128-946: Lua table WaitServerResponseUI not exists
+
+14:13:43.905-1: Lua table LoginUI not exists
+
+14:13:46.743-148: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+14:13:48.548-169: Lua table MainLandUI not exists
+
+14:13:48.566-169: Lua table Joystick not exists
+
+14:13:48.571-169: Lua table TouchMove not exists
+
+14:13:53.941-395: Lua table SceneMapUI not exists
+
+14:13:57.529-514: Lua table WorldMapUI not exists
+
+14:13:59.153-591: Lua table PromptUI not exists
+
+14:14:6.767-941: Lua table ProcessBarUI not exists
+
+14:14:44.927-513: Lua table TopNoticeUI not exists
+
+14:52:14.388-172: Lua table Resurrection not exists
+
+15:10:12.958-846: Lua table NPCTalkUI not exists
+
+15:10:37.676-911: Lua table FriendsUI not exists
+
+15:10:37.698-911: Lua table ContractSelectNoteUI not exists
+
+15:10:39.359-984: Lua table SystemMsgUI not exists
+
+15:10:41.932-82: Lua table CollectUI not exists
+

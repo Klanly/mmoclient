@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: 1eceed09e3d0f2f409cf1f8841fc3028
+timeCreated: 1476783947
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: fb_suoy_jz_01_a
+    100002: fb_suoy_jz_01_b
+    100004: fb_suoy_jz_01_c
+    100006: //RootNode
+    100008: objobjobjtout23
+    100010: fb_suoy_jz_16_a
+    100012: fb_suoy_jz_16_b
+    100014: fb_suoy_jz_16_c
+    400000: fb_suoy_jz_01_a
+    400002: fb_suoy_jz_01_b
+    400004: fb_suoy_jz_01_c
+    400006: //RootNode
+    400008: objobjobjtout23
+    400010: fb_suoy_jz_16_a
+    400012: fb_suoy_jz_16_b
+    400014: fb_suoy_jz_16_c
+    2300000: fb_suoy_jz_01_a
+    2300002: fb_suoy_jz_01_b
+    2300004: fb_suoy_jz_01_c
+    2300006: objobjobjtout23
+    2300008: //RootNode
+    2300010: fb_suoy_jz_16_a
+    2300012: fb_suoy_jz_16_b
+    2300014: fb_suoy_jz_16_c
+    3300000: fb_suoy_jz_01_a
+    3300002: fb_suoy_jz_01_b
+    3300004: fb_suoy_jz_01_c
+    3300006: objobjobjtout23
+    3300008: //RootNode
+    3300010: fb_suoy_jz_16_a
+    3300012: fb_suoy_jz_16_b
+    3300014: fb_suoy_jz_16_c
+    4300000: objobjobjtout23
+    4300002: fb_suoy_jz_01_c
+    4300004: fb_suoy_jz_01_b
+    4300006: fb_suoy_jz_01_a
+    4300008: fb_suoy_jz_16_c
+    4300010: fb_suoy_jz_16_b
+    4300012: fb_suoy_jz_16_a
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

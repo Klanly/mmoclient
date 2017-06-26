@@ -1,0 +1,36 @@
+20:52:17.542-1: Lua table LoginUI not exists
+
+11:21:43.733-329: Lua table SelectServerUI not exists
+
+11:21:55.852-970: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+11:22:26.550-996: Lua table MainLandUI not exists
+
+11:22:26.597-996: Lua table Joystick not exists
+
+11:22:26.638-996: Lua table TouchMove not exists
+
+11:23:6.666-961: Lua table TopNoticeUI not exists
+
+12:8:4.830-960: Lua table Resurrection not exists
+
+12:9:17.415-224: Lua table PromptUI not exists
+
+12:9:31.760-604: Lua table SceneMapUI not exists
+
+12:18:3.207-713: Lua table WaitServerResponseUI not exists
+
+12:28:0.393-478: Lua table RoleUI not exists
+
+12:28:0.637-478: Lua table BagUI not exists
+
+12:28:1.233-478: Lua table PlayerResourceUI not exists
+
+12:28:9.834-705: Lua table SystemSetting not exists
+
+12:28:40.473-696: Lua table MallUI not exists
+
+Destroying object multiple times. Don't use DestroyImmediate on the same object in OnDisable or OnDestroy.
+UnityEngine.Object:DestroyImmediate(Object)
+EffectComp:OnDestroy() (at Assets/Script/main/Component/EffectComp.cs:227)
+

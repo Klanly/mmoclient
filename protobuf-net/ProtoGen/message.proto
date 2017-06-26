@@ -1,0 +1,10 @@
+message RegisterUserRequest{
+	required string UserName = 1;
+	required string Password = 2;
+	required string RegisterOS = 3;
+	required string RegisterHW = 4;
+};
+
+message RegisterUserReply{
+	required uint32 Result = 1;
+};

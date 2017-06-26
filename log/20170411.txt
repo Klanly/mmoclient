@@ -1,0 +1,100 @@
+19:57:17.877-1: LuaState start
+
+19:57:17.916-1: [string "tolua.lua"]:10: jit    true    CMOV    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+19:57:17.920-1: [string "tolua.lua"]:11: os: Windows, arch: x64
+
+19:57:21.486-1: [string "Game"]:56: ---- lua Game OnInitOK ----
+
+初始化GameManager
+
+19:57:27.723-1: Lua table LoginUI not exists
+
+19:57:32.176-178: Lua table SelectServerUI not exists
+
+connect 服务器，IP[172.17.16.233] PORT[4010] Zone[101]
+
+19:57:33.607-284: [string "Game"]:68: ######## start connect server ip=172.17.16.233 port=4010 ########
+
+19:57:33.721-292: [string "Game"]:77: ######## connect server succeed! ip=172.17.16.233 port=4010 ########
+
+19:58:16.38-53: Lua table WaitServerResponseUI not exists
+
+19:58:20.930-469: Lua table PromptUI not exists
+
+connect 服务器，IP[172.17.16.233] PORT[4010] Zone[101]
+
+19:58:59.405-868: [string "Game"]:68: ######## start connect server ip=172.17.16.233 port=4010 ########
+
+19:58:59.534-873: [string "Game"]:77: ######## connect server succeed! ip=172.17.16.233 port=4010 ########
+
+19:59:2.190-39: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+19:59:25.774-55: Lua table MainLandUI not exists
+
+19:59:25.811-55: Lua table Joystick not exists
+
+19:59:25.829-55: Lua table TouchMove not exists
+
+19:59:39.843-168: Lua table GoldenFingerUI not exists
+
+OnSelect()
+
+OnDeselect()
+
+20:6:3.998-0: LuaState quit
+
+20:6:6.573-1: LuaState start
+
+20:6:6.578-1: [string "tolua.lua"]:10: jit    true    CMOV    SSE2    SSE3    SSE4.1    fold    cse    dce    fwd    dse    narrow    loop    abc    sink    fuse
+
+20:6:6.581-1: [string "tolua.lua"]:11: os: Windows, arch: x64
+
+20:6:6.904-1: [string "Game"]:56: ---- lua Game OnInitOK ----
+
+初始化GameManager
+
+20:6:7.491-1: Lua table LoginUI not exists
+
+connect 服务器，IP[172.17.16.233] PORT[4010] Zone[101]
+
+20:6:9.202-106: [string "Game"]:68: ######## start connect server ip=172.17.16.233 port=4010 ########
+
+20:6:9.302-114: [string "Game"]:77: ######## connect server succeed! ip=172.17.16.233 port=4010 ########
+
+20:6:11.161-259: Type UnityEngine.Sprite not wrap to lua, the warning is only raised once
+
+20:6:16.376-271: Lua table MainLandUI not exists
+
+20:6:16.394-271: Lua table Joystick not exists
+
+20:6:16.399-271: Lua table TouchMove not exists
+
+20:10:19.251-859: Lua table GoldenFingerUI not exists
+
+OnSelect()
+
+OnDeselect()
+
+OnSelect()
+
+OnDeselect()
+
+OnSelect()
+
+StringPosition:20  StringSelectPosition:0
+
+Caret is  [Not Inside Tag]
+
+Caret is  [Not Inside Tag]
+
+Caret is  [Not Inside Tag]
+
+Caret is  [Not Inside Tag]
+
+Caret is  [Not Inside Tag]
+
+OnDeselect()
+
+20:10:57.71-0: LuaState quit
+

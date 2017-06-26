@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: ec805c4b5d6b982409e22267d1e7befe
+timeCreated: 1487569874
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Footsteps
+    100004: Bip001 Head
+    100006: Bip001 HeadNub
+    100008: Bip001 L Calf
+    100010: Bip001 L Clavicle
+    100012: Bip001 L Foot
+    100014: Bip001 L Forearm
+    100016: Bip001 L Hand
+    100018: Bip001 L Thigh
+    100020: Bip001 L Toe0
+    100022: Bip001 L Toe0Nub
+    100024: Bip001 L UpperArm
+    100026: Bip001 Neck
+    100028: Bip001 Pelvis
+    100030: Bip001 R Calf
+    100032: Bip001 R Clavicle
+    100034: Bip001 R Foot
+    100036: Bip001 R Forearm
+    100038: Bip001 R Hand
+    100040: Bip001 R Thigh
+    100042: Bip001 R Toe0
+    100044: Bip001 R Toe0Nub
+    100046: Bip001 R UpperArm
+    100048: Bip001 Spine
+    100050: Bip001 Spine1
+    100052: bone_01
+    100054: bone_02
+    100056: bone_03
+    100058: bone_04
+    100060: bone_05
+    100062: bone_06
+    100064: bone_07
+    100066: bone_08
+    100068: bone_09
+    100070: bone_10
+    100072: bone_11
+    100074: bone_12
+    100076: bone_17
+    100078: bone_18
+    100080: bone_19
+    100082: bone_21
+    100084: bone_22
+    100086: bone_25
+    100088: bone_26
+    100090: bone_27
+    100092: bone_28
+    100094: bone_29
+    100096: bone_30
+    100098: bone_31
+    100100: bone_32
+    100102: Helix001
+    100104: Helix002
+    100106: Helix003
+    100108: male_02_head02
+    100110: //RootNode
+    100112: Particle View 01
+    100114: Particle View 01 1
+    100116: Particle View 01 10
+    100118: Particle View 01 11
+    100120: Particle View 01 12
+    100122: Particle View 01 13
+    100124: Particle View 01 14
+    100126: Particle View 01 15
+    100128: Particle View 01 16
+    100130: Particle View 01 17
+    100132: Particle View 01 18
+    100134: Particle View 01 19
+    100136: Particle View 01 2
+    100138: Particle View 01 20
+    100140: Particle View 01 21
+    100142: Particle View 01 22
+    100144: Particle View 01 23
+    100146: Particle View 01 24
+    100148: Particle View 01 25
+    100150: Particle View 01 26
+    100152: Particle View 01 27
+    100154: Particle View 01 28
+    100156: Particle View 01 29
+    100158: Particle View 01 3
+    100160: Particle View 01 30
+    100162: Particle View 01 31
+    100164: Particle View 01 32
+    100166: Particle View 01 33
+    100168: Particle View 01 34
+    100170: Particle View 01 35
+    100172: Particle View 01 36
+    100174: Particle View 01 37
+    100176: Particle View 01 38
+    100178: Particle View 01 39
+    100180: Particle View 01 4
+    100182: Particle View 01 40
+    100184: Particle View 01 41
+    100186: Particle View 01 42
+    100188: Particle View 01 43
+    100190: Particle View 01 44
+    100192: Particle View 01 5
+    100194: Particle View 01 6
+    100196: Particle View 01 7
+    100198: Particle View 01 8
+    100200: Particle View 01 9
+    100202: Plane001
+    100204: Plane003
+    100206: Plane004
+    100208: Plane005
+    100210: Plane006
+    100212: quanshinan_02
+    100214: quantao_nan_s02
+    400000: Bip001
+    400002: Bip001 Footsteps
+    400004: Bip001 Head
+    400006: Bip001 HeadNub
+    400008: Bip001 L Calf
+    400010: Bip001 L Clavicle
+    400012: Bip001 L Foot
+    400014: Bip001 L Forearm
+    400016: Bip001 L Hand
+    400018: Bip001 L Thigh
+    400020: Bip001 L Toe0
+    400022: Bip001 L Toe0Nub
+    400024: Bip001 L UpperArm
+    400026: Bip001 Neck
+    400028: Bip001 Pelvis
+    400030: Bip001 R Calf
+    400032: Bip001 R Clavicle
+    400034: Bip001 R Foot
+    400036: Bip001 R Forearm
+    400038: Bip001 R Hand
+    400040: Bip001 R Thigh
+    400042: Bip001 R Toe0
+    400044: Bip001 R Toe0Nub
+    400046: Bip001 R UpperArm
+    400048: Bip001 Spine
+    400050: Bip001 Spine1
+    400052: bone_01
+    400054: bone_02
+    400056: bone_03
+    400058: bone_04
+    400060: bone_05
+    400062: bone_06
+    400064: bone_07
+    400066: bone_08
+    400068: bone_09
+    400070: bone_10
+    400072: bone_11
+    400074: bone_12
+    400076: bone_17
+    400078: bone_18
+    400080: bone_19
+    400082: bone_21
+    400084: bone_22
+    400086: bone_25
+    400088: bone_26
+    400090: bone_27
+    400092: bone_28
+    400094: bone_29
+    400096: bone_30
+    400098: bone_31
+    400100: bone_32
+    400102: Helix001
+    400104: Helix002
+    400106: Helix003
+    400108: male_02_head02
+    400110: //RootNode
+    400112: Particle View 01
+    400114: Particle View 01 1
+    400116: Particle View 01 10
+    400118: Particle View 01 11
+    400120: Particle View 01 12
+    400122: Particle View 01 13
+    400124: Particle View 01 14
+    400126: Particle View 01 15
+    400128: Particle View 01 16
+    400130: Particle View 01 17
+    400132: Particle View 01 18
+    400134: Particle View 01 19
+    400136: Particle View 01 2
+    400138: Particle View 01 20
+    400140: Particle View 01 21
+    400142: Particle View 01 22
+    400144: Particle View 01 23
+    400146: Particle View 01 24
+    400148: Particle View 01 25
+    400150: Particle View 01 26
+    400152: Particle View 01 27
+    400154: Particle View 01 28
+    400156: Particle View 01 29
+    400158: Particle View 01 3
+    400160: Particle View 01 30
+    400162: Particle View 01 31
+    400164: Particle View 01 32
+    400166: Particle View 01 33
+    400168: Particle View 01 34
+    400170: Particle View 01 35
+    400172: Particle View 01 36
+    400174: Particle View 01 37
+    400176: Particle View 01 38
+    400178: Particle View 01 39
+    400180: Particle View 01 4
+    400182: Particle View 01 40
+    400184: Particle View 01 41
+    400186: Particle View 01 42
+    400188: Particle View 01 43
+    400190: Particle View 01 44
+    400192: Particle View 01 5
+    400194: Particle View 01 6
+    400196: Particle View 01 7
+    400198: Particle View 01 8
+    400200: Particle View 01 9
+    400202: Plane001
+    400204: Plane003
+    400206: Plane004
+    400208: Plane005
+    400210: Plane006
+    400212: quanshinan_02
+    400214: quantao_nan_s02
+    2300000: Plane001
+    2300002: Plane003
+    2300004: Plane004
+    2300006: Plane005
+    2300008: Plane006
+    2300010: //RootNode
+    3300000: Plane001
+    3300002: Plane003
+    3300004: Plane004
+    3300006: Plane005
+    3300008: Plane006
+    3300010: //RootNode
+    4300000: quanshinan_02
+    4300002: male_02_head02
+    4300004: quantao_nan_s02
+    4300006: Plane001
+    4300008: Plane003
+    4300010: Plane004
+    4300012: Plane005
+    4300014: Plane006
+    9500000: //RootNode
+    13700000: male_02_head02
+    13700002: quanshinan_02
+    13700004: quantao_nan_s02
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
