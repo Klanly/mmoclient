@@ -1,6 +1,6 @@
 -- This is generate by program !!!
 -- Don't change it manaully. 
--- GenerateTime: '2017-06-19 16:46:33'
+-- GenerateTime: '2017-06-26 14:29:06'
 
 return { 
     ["ChannelContent"] = {
@@ -471,7 +471,7 @@ return {
             Name = 0,
             Name1 = "系统消息",
             TextContent = 0,
-            TextContent1 = "物资车：%s的物资车正在被敌军拦截，请前往%s（%int）保护。",
+            TextContent1 = "物资车：%s的物资车正在被敌军拦截，请前往<u>%s</u>保护。",
             Notice = 0,
             FriendChatDisplay = 0,
             Repeat = {},

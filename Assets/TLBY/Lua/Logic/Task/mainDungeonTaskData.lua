@@ -69,6 +69,18 @@ function CreateMainDungeonTaskData(config)
 			end
 		end
 	end
+	self.onEndTalk = function()
+		log('task', 'onEndTalk id=' .. self.id .. ' state=' .. self.state)
+		if self.state == const.TASK_STATE.acceptable then
+			TaskManager.ReceiveTask(self)
+		elseif self.state == const.TASK_STATE.doing then
+			
+		elseif self.state == const.TASK_STATE.submit then
+			TaskManager.SubmitTask(self)
+		else
+			error('npc state error while end talk')
+		end	
+	end
 	self.onSubmitable = function()
 		log('task', 'onSubmitable id=' .. self.id)
 		if self.autoSubmit then

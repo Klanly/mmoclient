@@ -174,9 +174,9 @@ local function CreateChapterRewardItemUI(template, data, width)
 		if data.RewardState == ChapterRewardState.CanButNotGet then
 			MainDungeonManager.RequestChapterReward(data.chapter, data.SIndex)
 		elseif data.RewardState == ChapterRewardState.GetOver then 
-			UIManager.PushView(ViewAssets.Sweep,nil, data.Rewards,nil,'AutoGenerate/Sweep/rewards', "获得" .. data.Snum .. "个S，可以获得以下奖励", false, "已经领取")
+			UIManager.PushView(ViewAssets.Sweep,nil, data.Rewards,'AutoGenerate/Sweep/rewards', "获得" .. data.Snum .. "个S，可以获得以下奖励", false, "已经领取")
 		elseif data.RewardState == ChapterRewardState.CannotGet then
-			UIManager.PushView(ViewAssets.Sweep,nil, data.Rewards,nil,'AutoGenerate/Sweep/rewards', "获得" .. data.Snum .. "个S，可以获得以下奖励", false, "不可领取")
+			UIManager.PushView(ViewAssets.Sweep,nil, data.Rewards,'AutoGenerate/Sweep/rewards', "获得" .. data.Snum .. "个S，可以获得以下奖励", false, "不可领取")
 		end
 	end
 

@@ -103,7 +103,7 @@ local function CreateRankContentUI(view)		--排行榜内容显示界面
 	local playerMenuItemName = {'综合实力', '战斗力', '装备', '等级', '财富', '战阶', '鲜花'}
 	local petMenuItemName = {'宠物星级', '宠物资质', '宠物初始资质'}
 	local unionMenuItemName = {'综合实力', '帮会财富'}
-	local playerVocationTitle = {'全部', '谪仙', '昆仑', '流云', '天弓'}
+	local playerVocationTitle = {'全部', '谪仙', '昆仑', '流云'} --, '天弓'
 	local flowerTitle = {'送花(历)', '收花(历)'}
 	local petStarTitle  = {'全部'}
 	local petQualTitle  = {'物攻资质', '法攻资质', '物防资质', '法防资质'}

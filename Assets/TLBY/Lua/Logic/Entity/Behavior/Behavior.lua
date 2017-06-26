@@ -462,7 +462,6 @@ local skill_config = GetConfig("growing_skill")
 
 function Behavior:PlayHitEffect(attacker, skill_id, is_bullet, damage, event_type)
     is_bullet = is_bullet or false
-
     local skill_data = skill_config.Skill[tonumber(skill_id)]
     local behit_datas
     if skill_data ~= nil then
@@ -494,16 +493,16 @@ function Behavior:PlayHitEffect(attacker, skill_id, is_bullet, damage, event_typ
 
 local function playNum()
         if event_type == DamageType.Miss then
-            self:ShowState('miss')
+            self:ShowState(attacker.entityType,'miss')
         elseif event_type == DamageType.Block then
-            self:ShowState('block')
+            self:ShowState(attacker.entityType,'block')
         elseif event_type == DamageType.Puncture then
-            self:ShowState('puncture')
+            self:ShowState(attacker.entityType,'puncture')
         end
         if event_type == DamageType.Crit then
-            self:ShowCritDamage(0-damage)
+            self:ShowCritDamage(attacker.entityType,0-damage)
         elseif event_type ~= DamageType.Miss then
-            self:ShowDamage(0-damage)
+            self:ShowDamage(attacker.entityType,0-damage)
         end
     end
 
@@ -558,13 +557,17 @@ end
     end
 
     local left = 0
-    function Behavior:ShowDamage(damage)
+    function Behavior:ShowDamage(entityType,damage)
         if damage < 0 then
             local prefab = 'A_eff_UI@damage_appear_right'
-            local font = 'OrangeNum'
-            if self.owner.entityType == EntityType.Hero then
+            local font = 'RedNum'
+            local scale = 1
+            if entityType == EntityType.Hero or entityType == EntityType.Pet then
                 prefab = 'A_eff_UI@damage_appear_left'
-                font = 'RedNum'
+                font = 'OrangeNum'
+            end
+            if entityType == EntityType.Pet then
+                scale = 0.7
             end
             ResourceManager.CreateUI("HpBarUI/damage",1.1,function(clone)
                 UIManager.SetParent(clone,LayerGroup.sceneDamage)
@@ -572,7 +575,8 @@ end
                 local textTransform = clone.transform:Find('damage/text')
                 textTransform:GetComponent('TextMeshProUGUI').text = ShowDamageNum(font,-damage)
                 textTransform.localPosition = Vector3.New(math.random()*50-25,0,0)
-                clone.transform:Find('damage'):GetComponent('Animation'):Play(prefab)               
+                clone.transform:Find('damage'):GetComponent('Animation'):Play(prefab)  
+                clone.transform.localScale = Vector3.New(scale,scale,1)                
 			end)
         elseif damage > 0 then
             ResourceManager.CreateUI("HpBarUI/heal",1.1,function(obj)
@@ -585,17 +589,20 @@ end
     end
     
     function Behavior:AddMp(num)
-        ResourceManager.CreateUI("HpBarUI/addMp",1.1,function(obj)
-		local clone = obj
+        ResourceManager.CreateUI("HpBarUI/addMp",1.1,function(clone)
 		UIManager.SetParent(clone,LayerGroup.sceneDamage)
         SetFollowTarget(self.transform,clone)
         ShowHealNum(clone,num,'BlueNum')
 		end)
     end
     
-    function Behavior:ShowState(state,damage)
-       ResourceManager.CreateUI("HpBarUI/"..state,1,function(obj)
-		local clone = obj
+    function Behavior:ShowState(entityType,state,damage)
+       ResourceManager.CreateUI("HpBarUI/"..state,1,function(clone)
+        local scale = 1
+        if entityType == EntityType.Pet then
+            scale = 0.7
+        end
+        clone.transform.localScale = Vector3.New(scale,scale,1)
 		 UIManager.SetParent(clone,LayerGroup.sceneDamage)
         SetFollowTarget(self.transform,clone)
         if damage and damage ~= 0 then
@@ -604,9 +611,13 @@ end
 		end)
     end
     
-    function Behavior:ShowCritDamage(damage)
-       ResourceManager.CreateUI("HpBarUI/crit",1,function(obj)
-            local clone = obj.transform
+    function Behavior:ShowCritDamage(entityType,damage)
+       ResourceManager.CreateUI("HpBarUI/crit",1,function(clone)
+            local scale = 1
+            if entityType == EntityType.Pet then
+                scale = 0.7
+            end
+            clone.transform.localScale = Vector3.New(scale,scale,1)
             UIManager.SetParent(clone,LayerGroup.sceneDamage)
             SetFollowTarget(self.transform,clone)
             clone.transform:Find('crit/text'):GetComponent('TextMeshProUGUI').text = ShowDamageNum('YellowNum',-damage)

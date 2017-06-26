@@ -6,6 +6,7 @@ local function CreateTargetManager()
     local self = CreateObject()
     local currentTarget
     local targetFlag
+    local selectedPuppets = {}
 	
     --self.TargetUnits = {}
 	--self.TargetUnitKeys = {}
@@ -19,6 +20,13 @@ local function CreateTargetManager()
             if boxCollider then
                 scale = boxCollider.transform.localScale*math.min(boxCollider.size.z,boxCollider.size.x)
             end
+			
+			if currentTarget.entityType == EntityType.WildPet and GlobalManager.isHook == true then  --待机时，当前选中的是宠物
+				--取消挂机
+				local hookCombat = require "Logic/OnHookCombat"
+				hookCombat.SetHook(false)
+			end
+			
             if targetFlag == nil then
                 targetFlag = true
                 ResourceManager.CreateEffect( "Common/eff_common@suoding",function(obj)              
@@ -43,15 +51,6 @@ local function CreateTargetManager()
         end
     end
     
-    local selectNearbyMonster = function(puppet)
-		if puppet.entityType == EntityType.Monster and not puppet:IsDied() and puppet ~= currentTarget then
-			puppet.ApproachDistance = Vector3.Distance2D(SceneManager.GetEntityManager().hero:GetPosition(), puppet:GetPosition()) 
-			if puppet.ApproachDistance < self.fightRadius   then         
-			  return true 
-			end        
-		end
-		return false
-	end
     self.CanAttack = function(puppet)
         if not puppet or not puppet.entityType then
             return false
@@ -142,7 +141,17 @@ local function CreateTargetManager()
 		return false
 	end
 	
-    local GetCloestMonster = function()
+    self.GetCloestMonster = function()       
+        local selectNearbyMonster = function(puppet)
+            if puppet.entityType == EntityType.Monster and not puppet:IsDied() then
+                puppet.ApproachDistance = Vector3.Distance2D(SceneManager.GetEntityManager().hero:GetPosition(), puppet:GetPosition()) 
+                if puppet.ApproachDistance < self.fightRadius   then         
+                  return true 
+                end        
+            end
+            return false
+        end
+        
         local monsters = SceneManager.GetEntityManager().QueryPuppets(selectNearbyMonster)
 		local function DistanceSort(p1,p2)
            return monsters[p1].ApproachDistance < monsters[p2].ApproachDistance
@@ -156,7 +165,6 @@ local function CreateTargetManager()
 		return monsters[key_table[1]]
         
     end
-
     
     local Update = function()
         if currentTarget and SceneManager.GetEntityManager().hero and Vector3.Distance2D(currentTarget:GetPosition(),SceneManager.GetEntityManager().hero:GetPosition()) > self.removeRadius then
@@ -191,17 +199,56 @@ local function CreateTargetManager()
     
     function self.UpdateTarget( targetType )
         if not targetType then
-            self.SetTarget(GetCloestMonster())
+            self.SetTarget(self.GetCloestMonster())
             return currentTarget
         elseif bit:_and(EntityType.Monster, targetType) > 0  then
-            self.SetTarget(GetCloestMonster())
+            self.SetTarget(self.GetCloestMonster())
             return currentTarget
         else
             self.SetTarget( SceneManager.GetEntityManager().QueryPuppet(selectCloestPlayer) )
             return currentTarget
         end
     end
-	
+	    
+    self.SwitchTarget = function( targetType )
+        local hero = SceneManager.GetEntityManager().hero
+        if not hero then
+            return
+        end
+        if not selectedPuppets[targetType] then
+            selectedPuppets[targetType] = {}
+        end
+        local selectPuppet = function(puppet)
+            if puppet.entityType ~= targetType or puppet == currentTarget or selectedPuppets[targetType][puppet.uid] then
+                return false
+            end
+            if not self.CanAttack(puppet) then
+                return false
+            end
+            puppet.ApproachDistance = Vector3.Distance2D(hero:GetPosition(), puppet:GetPosition()) 
+            if puppet.ApproachDistance < self.fightRadius then
+                return true
+            end
+            return false
+        end
+        local puppets = SceneManager.GetEntityManager().QueryPuppets(selectPuppet)
+        if table.isEmptyOrNil(puppets) then
+            selectedPuppets[targetType] = {}
+            puppets = SceneManager.GetEntityManager().QueryPuppets(selectPuppet)
+        end
+		local function DistanceSort(p1,p2)
+           return puppets[p1].ApproachDistance < puppets[p2].ApproachDistance
+        end
+        local key_table = {} 
+		for key,_ in pairs(puppets) do  
+          table.insert(key_table,key)  
+        end 
+		table.sort(key_table,DistanceSort)
+        if #key_table > 0 then
+            selectedPuppets[targetType][key_table[1]] = true
+            self.SetTarget( puppets[key_table[1]] ) 
+        end
+    end
 
     function self.ClearTarget()
         if targetFlag and targetFlag ~= true then
@@ -213,11 +260,6 @@ local function CreateTargetManager()
         
         currentTarget = nil
     end
-    UpdateBeat:Add(Update,self)
-	
-	function self.GetCloestMonster()
-		return GetCloestMonster()
-		end
 	
 	function self.GetHookMonster()
 		local monsters = SceneManager.GetEntityManager().QueryPuppets(HookSelectMonster)
@@ -238,8 +280,8 @@ local function CreateTargetManager()
 		end
     end
 	
+    UpdateBeat:Add(Update,self)
     return self
-
 end
 
 TargetManager = TargetManager or CreateTargetManager()
