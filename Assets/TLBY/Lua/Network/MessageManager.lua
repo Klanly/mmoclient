@@ -63,7 +63,7 @@ local function CreateMessageManager()
 			return
 		end
 		local unpackData = mp.unpack(data)
-        table.print(unpackData)
+        -- table.print(unpackData)
 		logMsg(msg, unpackData)
         
 		if unpackData.result and unpackData.result ~= 0 then
@@ -87,7 +87,7 @@ local function CreateMessageManager()
 	-- lua请求
 	self.RequestLua = function(msg, data, async)
 		local d = data or {}
-        table.print(d)
+        -- table.print(d)
 		-- log('msg', table.toString(d, "---- request msg id=" .. msg .. " " .. (d.func_name or "") .. " " .. (MSG_DESC[msg] or "")))  
 		log('msg', ("---- request msg id=" .. msg .. " " .. (d.func_name or "") .. " " .. (MSG_DESC[msg] or "")))        
 		gameMgr:GetLuaModule():RunLuaRequest(msg, mp.pack(d), getConnection(msg))
