@@ -16,8 +16,12 @@ local function CreateTouchMove()
     end
     
     local GetTerrainPos = function(dest)
-        local ray = UnityEngine.Camera.main:ScreenPointToRay(dest)
-
+        local mCamera = UnityEngine.Camera.main
+        if not mCamera then
+            return Vector3.zero
+        end
+        
+        local ray = mCamera:ScreenPointToRay(dest)
         local hits = UnityEngine.Physics.RaycastAll(ray)
         local puppets = {}
         for i = 0, hits.Length - 1 do

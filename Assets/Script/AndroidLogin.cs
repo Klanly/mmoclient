@@ -9,7 +9,7 @@ public class AndroidLogin : MonoBehaviour, IPointerClickHandler
     public virtual void OnPointerClick(PointerEventData eventData)
     {
 #if UNITY_ANDROID
-        obj.Call("LoginClick");
+        //obj.Call("LoginClick");
 #endif
     }
 #if UNITY_ANDROID
