@@ -31,6 +31,25 @@ local CreateAOIManager = function()
 		end 
 		
 	end
+
+	-- self.testAdd = function()
+	-- 	local entityManager = SceneManager.GetEntityManager()
+	-- 	local data = MyHeroManager.heroData
+	-- 	local hero = SceneManager.GetEntityManager().hero
+	-- 	hero.behavior:SetDefaultAnimation('NormalStandby')
+	-- 	hero.behavior:SetModel(hero.behavior.soulPrefab, 1)	
+	-- 	data.posX = hero:GetPosition().x
+	-- 	data.posY = hero:GetPosition().y
+	-- 	data.posZ = hero:GetPosition().z
+	-- 	data.source = EntitySource.AOI
+	-- 	Timer.Delay(2, function()
+	-- 		entityManager.DestroyPuppet(data.entity_id)
+	-- 		data.hp = 0
+	-- 		Timer.Delay(0.01, function()
+	-- 			entityManager.CreateHero(data)
+	-- 		end)
+	-- 	end)
+	-- end
 	
 	local isPuppetSyncable = function(puppet)
 		if not puppet or puppet:IsDestroy() or puppet:GetSyncPosition() then
