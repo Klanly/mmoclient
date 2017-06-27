@@ -103,10 +103,10 @@ public class DissolveEffect : Effect {
 
     public override void RevertEffect()
     {
-        for (int i = 0; i < mats.Count; i++)
-        {
-            mats[i].SetFloat(ShaderColorName, 0);
-        }
+        //for (int i = 0; i < mats.Count; i++)
+        //{
+        //    mats[i].SetFloat(ShaderColorName, 0);
+        //}
         kDissolveTpye = 0;
     }
 

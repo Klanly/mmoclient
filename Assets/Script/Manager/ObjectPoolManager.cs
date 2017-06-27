@@ -457,7 +457,6 @@ public class ObjectPoolSystem
         kWaitDeleteLoadedPrefabEntrys.Clear();
         kUnusedResources.Clear();
         kDestoryResources.Clear();
-        Resources.UnloadUnusedAssets();
     }
 
     private UnityEngine.Object NewFromUnusedResources(string resname)

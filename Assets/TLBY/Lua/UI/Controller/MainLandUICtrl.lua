@@ -1193,6 +1193,7 @@ local CreatePetGroupUICtrl = function(view)
 			pet2.pet.data = nil
 		end
 		
+		local haveFightData = 0
 		for k, v in pairs(petOnFightData) do
 			local petData =  petOnFightData[k]
 			if petData.fight_index == 1 then
@@ -1218,6 +1219,15 @@ local CreatePetGroupUICtrl = function(view)
 					pet2.pet = pet
 				end
 			end
+			haveFightData = 1
+		end
+		
+		if timer == nil and haveFightData > 0 then
+			self.startTimer()
+		elseif timer and haveFightData == 0 then
+			view.Pet1:SetActive(false)
+			view.Pet2:SetActive(false)
+			stopTimer()
 		end
 	end
 	
@@ -1306,7 +1316,7 @@ local CreatePetGroupUICtrl = function(view)
         end
     end
 
-    local startTimer = function()
+    self.startTimer = function()
         timer = Timer.Repeat(0.02, function()
             local currentPetNum = 0
 			local pet = pet1.pet
@@ -1477,6 +1487,8 @@ local CreatePetGroupUICtrl = function(view)
 		MessageManager.RegisterMessage(MSG.SC_MESSAGE_LUA_UPDATE, OnUpdateData)
 		
 		isHeroDead = false
+		view.Pet1:SetActive(false)
+		view.Pet2:SetActive(false)
 	
         ClickEventListener.Get(headImg1.gameObject).onClick = function()
 			local pet = pet1.pet
@@ -1499,19 +1511,21 @@ local CreatePetGroupUICtrl = function(view)
             end
         end
 
-        startTimer()
-
+		local index = 1
         local hero = SceneManager.GetEntityManager().hero
         if hero then
 			pet1.pet = nil
 			pet2.pet = nil
             local pets = hero:GetPets()
-			local index = 1
             for k, v in pairs(pets) do
                 self.bindPet(v, index)
 				index = index + 1
             end
         end
+		
+		if index > 1 then
+			self.startTimer()
+		end
     end
     self.onUnload = function()
         stopTimer()
