@@ -209,20 +209,25 @@ public class PuppetBehavior : EntityBehavior
 
     public void SetModel(GameObject b, float scale)
     {
-        b.transform.SetParent(body.transform.parent);
-        b.transform.localScale = Vector3.one * scale;
-        b.transform.localPosition = body.transform.localPosition;
-        b.transform.localRotation = body.transform.localRotation;
         gameObject.name = b.name;
-        b.name = "Body";
+        anim = b.GetComponentInChildren<Animation>();
 
-        ObjectPoolManager.RecycleObject(body.gameObject);
-        body = b;
-        anim = body.GetComponentInChildren<Animation>();
+        b.transform.localScale = Vector3.one * scale;
+        b.name = "Body";
+        b.transform.SetParent(transform);
+
+        if(body != null)
+        {
+            b.transform.localPosition = body.transform.localPosition;
+            b.transform.localRotation = body.transform.localRotation;
+            ObjectPoolManager.RecycleObject(body.gameObject);
+        }
+
         if(animationEvt!= null)
         {
             animationEvt.ResetBodyAnim(anim);
         }
+        body = b;
     }
 
     public void SetScale(float scale)
