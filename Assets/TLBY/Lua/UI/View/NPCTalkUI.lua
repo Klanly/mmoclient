@@ -11,13 +11,13 @@ local function CreateNPCTalkUI()
 		self.imgLeftHead = self.transform:FindChild("@leftGroup/talkGroup/@imgLeftHead").gameObject;
 		self.txtLeftName = self.transform:FindChild("@leftGroup/talkGroup/@txtLeftName").gameObject;
 		self.txtLeftContent = self.transform:FindChild("@leftGroup/talkGroup/@txtLeftContent").gameObject;
+		self.btnGroup = self.transform:FindChild("@leftGroup/@btnGroup").gameObject;
+		self.btnsContainer = self.transform:FindChild("@leftGroup/@btnGroup/@btnsContainer").gameObject;
+		self.taskBtnTemplate = self.transform:FindChild("@leftGroup/@btnGroup/@btnsContainer/@taskBtnTemplate").gameObject;
 		self.rightGroup = self.transform:FindChild("@rightGroup").gameObject;
 		self.imgRightHead = self.transform:FindChild("@rightGroup/talkGroup/@imgRightHead").gameObject;
 		self.txtRightName = self.transform:FindChild("@rightGroup/talkGroup/@txtRightName").gameObject;
 		self.txtRightContent = self.transform:FindChild("@rightGroup/talkGroup/@txtRightContent").gameObject;
-		self.btnGroup = self.transform:FindChild("@btnGroup").gameObject;
-		self.btnsContainer = self.transform:FindChild("@btnGroup/@btnsContainer").gameObject;
-		self.taskBtnTemplate = self.transform:FindChild("@btnGroup/@btnsContainer/@taskBtnTemplate").gameObject;
 		self.imgContiue = self.transform:FindChild("@imgContiue").gameObject;
 	end
 	return self;
