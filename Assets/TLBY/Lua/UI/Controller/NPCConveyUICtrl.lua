@@ -15,14 +15,14 @@ local function CreateNPCConveyUICtrl()
         for i=1,4 do           
             self.view['btn'..i]:SetActive(false)
             if #dataList >= i then
-                if dataList[i].Scene == 1001 then
-                    self.view['name'..i]:GetComponent('TextMeshProUGUI').text = '前往帮会领地'       
-                elseif #dataList[i].Cost == 2 then
-                    local itemName = LuaUIUtil.GetItemName(dataList[i].Cost[1])
-                    self.view['name'..i]:GetComponent('TextMeshProUGUI').text = string.format('前往%s（需消耗%s*%d）',dataList[i].Text,itemName,dataList[i].Cost[2])
-                else
-                    self.view['name'..i]:GetComponent('TextMeshProUGUI').text = '回到主城'
+                self.view['costDes'..i]:GetComponent('TextMeshProUGUI').text = dataList[i].Text
+                self.view['name'..i]:GetComponent('TextMeshProUGUI').text = dataList[i].Text
+                if #dataList[i].Cost == 2 then
+                    self.view['costNum'..i]:GetComponent('TextMeshProUGUI').text = dataList[i].Cost[2]
+                    self.view['costIcon'..i]:GetComponent('Image').overrideSprite = LuaUIUtil.GetItemIcon(dataList[i].Cost[1])
                 end
+                self.view['name'..i]:SetActive(#dataList[i].Cost ~= 2)
+                self.view['costDes'..i]:SetActive(#dataList[i].Cost == 2) 
                 
                 self.AddClick(self.view['btn'..i],function()                     
                     local data = {}
@@ -36,6 +36,8 @@ local function CreateNPCConveyUICtrl()
         end
         self.view.btn5:SetActive(true)
         self.view.name5:GetComponent('TextMeshProUGUI').text = '哪也不去'
+        self.view.costDes5:SetActive(true)
+        self.view.costDes5:SetActive(false) 
         self.AddClick(self.view.btn5,self.close)
     end
 
