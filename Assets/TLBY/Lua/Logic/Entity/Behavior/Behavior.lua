@@ -502,7 +502,7 @@ local function playNum()
         if event_type == DamageType.Crit then
             self:ShowCritDamage(attacker.entityType,0-damage)
         elseif event_type ~= DamageType.Miss then
-            self:ShowDamage(attacker.entityType,0-damage)
+            self:ShowDamage(0-damage,attacker.entityType)
         end
     end
 
@@ -557,7 +557,7 @@ end
     end
 
     local left = 0
-    function Behavior:ShowDamage(entityType,damage)
+    function Behavior:ShowDamage(damage,entityType)
         if damage < 0 then
             local prefab = 'A_eff_UI@damage_appear_right'
             local font = 'RedNum'
