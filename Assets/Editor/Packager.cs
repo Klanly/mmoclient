@@ -413,9 +413,8 @@ public class Packager
         string[] names = Directory.GetFiles(path);
         string[] dirs = Directory.GetDirectories(path);
         foreach (string filename in names) {
-            string ext = Path.GetExtension(filename);
-            if (ext.Equals(".meta")) continue;
-            files.Add(filename.Replace('\\', '/'));
+            if (filename.Contains(".unity3d") || filename.Contains("StreamingAssets")) 
+               files.Add(filename.Replace('\\', '/'));
         }
         foreach (string dir in dirs) {
             if (dir.Contains(".svn"))
