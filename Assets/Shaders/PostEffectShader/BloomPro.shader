@@ -56,7 +56,7 @@
 			CGPROGRAM			
 			#pragma vertex vert_img_aa
 			#pragma fragment fragBloomAmountToAlpha
-
+			#pragma target 3.0
 			//sampler2D _MainTex;
 			//half4 _MainTex_TexelSize;
 
@@ -102,7 +102,7 @@
 			CGPROGRAM
 			#pragma vertex vert_img_aa
 			#pragma fragment frag
- 	
+ 	        #pragma target 3.0
 			#pragma multi_compile BLOOM_SAMPLES_3 BLOOM_SAMPLES_5
  			
 			sampler2D _DsTex1;
@@ -183,6 +183,7 @@
 			CGPROGRAM
 			#pragma vertex vert_img_aa
 			#pragma fragment frag
+			#pragma target 3.0
 			#pragma fragmentoption ARB_precision_hint_fastest 
 			
 			//sampler2D _MainTex;
