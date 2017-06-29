@@ -1159,6 +1159,7 @@ end
 function CommonPuppet:OnTakeDamage(damage, attacker, skill_id, event_type)	
 	if self.behavior then
 		self.behavior:PlayHitEffect(attacker, skill_id, false, damage, event_type)
+		self.behavior:BehaveBehit()
 	end
 	
 	self:UpdateDamageHatred(damage, attacker)
@@ -1191,7 +1192,7 @@ function CommonPuppet:OnAddMp(num, source)
 end
 
 function CommonPuppet:OnReduceHp(num, attacker, event_type)		
-	self.behavior:BehaveBehit(num, event_type) 
+	-- self.behavior:BehaveBehit(num, event_type) 
 end
 	-- 拉到仇恨
 function CommonPuppet:OnBeTarget(attacker)

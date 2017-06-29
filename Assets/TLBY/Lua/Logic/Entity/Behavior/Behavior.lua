@@ -461,6 +461,10 @@ end
 local skill_config = GetConfig("growing_skill")
 
 function Behavior:PlayHitEffect(attacker, skill_id, is_bullet, damage, event_type)
+    if not attacker then
+        print('error PlayHitEffect when attacker is nil')
+        return 
+    end
     is_bullet = is_bullet or false
     local skill_data = skill_config.Skill[tonumber(skill_id)]
     local behit_datas
@@ -491,7 +495,7 @@ function Behavior:PlayHitEffect(attacker, skill_id, is_bullet, damage, event_typ
     end
 
 
-local function playNum()
+    local function playNum()
         if event_type == DamageType.Miss then
             self:ShowState(attacker.entityType,'miss')
         elseif event_type == DamageType.Block then

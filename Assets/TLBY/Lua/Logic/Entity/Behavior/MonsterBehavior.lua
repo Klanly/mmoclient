@@ -14,6 +14,21 @@ function MonsterBehavior:__ctor(owner)
     self:OnCreate()
 end
 
+function MonsterBehavior:UpdateBehavior(animation)
+    if self.owner:GetMonsterType() == 1 then
+        if animation == 'run' or animation == 'die' or animation == 'behit' then
+            Behavior.UpdateBehavior(self, animation)
+        else
+            if self.isOnBehitCD then
+                return
+            end
+            Behavior.UpdateBehavior(self, animation)
+        end 
+    else
+        Behavior.UpdateBehavior(self, animation)
+    end
+end
+
 function MonsterBehavior:OnCreate()   
     self.modelId = self.owner.data.ModelID
     local item = self:GetModelData(self.modelId)
@@ -135,11 +150,20 @@ function MonsterBehavior:BehaveBehit(damage, event_type)
     if self:IsBoss() then
         self:CastEffect('BeHitHighlightEffect')
     end
-    Behavior.BehaveBehit(self,damage,event_type)
+
+    if self.owner:GetMonsterType() == 1 then
+        if self.isOnBehitCD then
+            return
+        end
+        self:StopBehavior(self.behavior.currentAnim)
+        self:UpdateBehavior('behit')
+        self:startBehitCD()
+    else
+        Behavior.BehaveBehit(self,damage,event_type)
+    end
 end
 
 function MonsterBehavior:BebaveDie(callback)
-
     local function Dissolve()
         self:SetAnimationSpeed('die', 0)
         self:CastEffect("DissolveEffect", "Death")
