@@ -49,7 +49,7 @@ function CreateMainDungeonTaskData(config)
 
 	self.onDoing = function()
 		log('task', 'onDoing id=' .. self.id)
-		self.Excute()
+		-- self.Excute()
 	end
 	-- 继续执行任务
 	self.excuteDoing = function()
