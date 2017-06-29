@@ -72,7 +72,13 @@ function MonsterBehavior:OnCreate()
     if self.owner.source == EntitySource.Default then
        self:CastEffect('DissolveBornEffect')
     end
-	self:BossShowTime()
+    local now = networkMgr:GetConnection().ServerSecondTimestamp
+    local createTime = self.owner.data.createTime
+    local dt = math.abs(now - createTime)
+    -- print('delta time :' .. dt)
+    if dt < 10 then
+    	self:BossShowTime()
+    end
 end
 
 function MonsterBehavior:BossShowTime()
