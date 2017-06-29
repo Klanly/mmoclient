@@ -192,7 +192,7 @@ function CreatePetDetailUICtrl()
     self.ShowPetModel = function()
         self.HideModel()
         local data = petUI.selectPetData
-         LuaUIUtil.GetPetModel(data.pet_id,function(obj)
+         LuaUIUtil.GetPetModel(data.pet_id,data.pet_appearance,function(obj)
 			petModel = obj
 			petModel.transform:SetParent(self.view.petmodel.transform,false)
 			if data.pet_id == 7 then		--腾蛇的位置特殊处理

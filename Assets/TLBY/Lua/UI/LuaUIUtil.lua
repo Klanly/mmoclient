@@ -227,8 +227,12 @@ local function CreateLuaUIUtil()
         end
     end
     
-    self.GetPetModel = function(petID,func)      
-        ResourceManager.CreateCharacter(resTable.Model[petConfig.Attribute[petID].ModelID].Prefab,func)
+    self.GetPetModel = function(petID,appearance,func)
+        local modelId = petConfig.Attribute[petID].ModelID
+        if appearance and appearance > 1 then
+            modelId = petConfig.Attribute[petID]['ModelID'..appearance]
+        end
+        ResourceManager.CreateCharacter(resTable.Model[modelId].Prefab,func)
     end
     
     self.GetPuppetIcon = function(puppet)

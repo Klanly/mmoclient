@@ -409,8 +409,8 @@ function CreatePetMergeEatUICtrl()
     end
     
     self.ShowPetModel = function()
-        local CreatePet = function(id,pos,func)
-             LuaUIUtil.GetPetModel(id,function(obj)
+        local CreatePet = function(id,appearance,pos,func)
+             LuaUIUtil.GetPetModel(id,appearance,function(obj)
 				local model = obj
 				model.transform:SetParent(pos,false)
                 model.transform.localPosition = Vector3.New(0,0,0)
@@ -426,10 +426,10 @@ function CreatePetMergeEatUICtrl()
             return model
         end
         self.HideModel()
-        CreatePet(petUI.selectPetData.pet_id,self.view.mainPetModel.transform,function(obj)
+        CreatePet(petUI.selectPetData.pet_id,petUI.selectPetData.pet_appearance,self.view.mainPetModel.transform,function(obj)
 		   mainPetModel = obj
 		end)
-        if vicePetData then  CreatePet(vicePetData.pet_id,self.view.vicePetModel.transform,function(obj)
+        if vicePetData then  CreatePet(vicePetData.pet_id,vicePetData.pet_appearance,self.view.vicePetModel.transform,function(obj)
 			vicePetModel = obj
 		end) end
     end
