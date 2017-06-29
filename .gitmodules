@@ -1,0 +1,6 @@
+[submodule "Assets/TLBY/Lua/Logic/Scheme"]
+	path = Assets/TLBY/Lua/Logic/Scheme
+	url = https://github.com/houontherun/data
+[submodule "Assets/TLBY/Lua/Common"]
+	path = Assets/TLBY/Lua/Common
+	url = https://github.com/houontherun/common
