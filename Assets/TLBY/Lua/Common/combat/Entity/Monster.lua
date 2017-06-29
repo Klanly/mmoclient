@@ -236,6 +236,7 @@ function Monster:GetClientNeedInfo()
 	info.property = nil 
 	info.Scale = math.ceil(info.Scale*100)
 	info.Para2 = info.Para2
+	info.createTime = _get_now_time_second()
 	if info.Para1 and info.Para1 ~= '' then
 		info.configID = tonumber(info.Para1)
 	end
