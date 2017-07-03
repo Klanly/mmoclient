@@ -496,17 +496,21 @@ function Behavior:PlayHitEffect(attacker, skill_id, is_bullet, damage, event_typ
 
 
     local function playNum()
+        local attackerType = nil
+        if attacker then
+            attackerType = attacker.entityType
+        end
         if event_type == DamageType.Miss then
-            self:ShowState(attacker.entityType,'miss')
+            self:ShowState('miss',attackerType)
         elseif event_type == DamageType.Block then
-            self:ShowState(attacker.entityType,'block')
+            self:ShowState('block',attackerType)
         elseif event_type == DamageType.Puncture then
-            self:ShowState(attacker.entityType,'puncture')
+            self:ShowState('puncture',attackerType)
         end
         if event_type == DamageType.Crit then
-            self:ShowCritDamage(attacker.entityType,0-damage)
+            self:ShowCritDamage(attackerType,0-damage)
         elseif event_type ~= DamageType.Miss then
-            self:ShowDamage(0-damage,attacker.entityType)
+            self:ShowDamage(0-damage,attackerType)
         end
     end
 
@@ -600,7 +604,7 @@ end
 		end)
     end
     
-    function Behavior:ShowState(entityType,state,damage)
+    function Behavior:ShowState(state,entityType,damage)
        ResourceManager.CreateUI("HpBarUI/"..state,1,function(clone)
         local scale = 1
         if entityType == EntityType.Pet then
